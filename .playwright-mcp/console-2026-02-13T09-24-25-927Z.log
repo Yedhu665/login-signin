@@ -1,0 +1,15 @@
+[    1640ms] [WARNING] 🟡 [Mixpanel] Token missing, skipping event tracking @ https://architect-testing.projectsmate.com/_next/static/chunks/1544-541ff2be7e0927d0.js:0
+[    1685ms] [ERROR] 🔴 [Firebase] Error checking messaging support: FirebaseError: Messaging: Missing App configuration value: "messagingSenderId" (messaging/missing-app-config-values).
+    at eI (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:62998)
+    at https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:63596
+    at new eS (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:63706)
+    at o.instanceFactory (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:66404)
+    at a.getOrInitializeService (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:6195)
+    at a.getImmediate (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:4134)
+    at eP (https://architect-testing.projectsmate.com/_next/static/chunks/3762-5447c2e7cd359d42.js:1:66106)
+    at https://architect-testing.projectsmate.com/_next/static/chunks/1544-541ff2be7e0927d0.js:1:948 @ https://architect-testing.projectsmate.com/_next/static/chunks/1544-541ff2be7e0927d0.js:0
+[    2738ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api-test.projectsmate.com/api/v1/auth/me:0
+[    2739ms] [ERROR] error:  AxiosError: Request failed with status code 401
+    at eA (https://architect-testing.projectsmate.com/_next/static/chunks/2806-8708f1ce839700b4.js:1:55178)
+    at XMLHttpRequest.m (https://architect-testing.projectsmate.com/_next/static/chunks/2806-8708f1ce839700b4.js:1:59471) @ https://architect-testing.projectsmate.com/_next/static/chunks/344-85c707de2f9145d4.js:0
+[    2742ms] [WARNING] 🟡 [Mixpanel] Token missing, skipping event tracking @ https://architect-testing.projectsmate.com/_next/static/chunks/1544-541ff2be7e0927d0.js:0

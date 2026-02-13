@@ -1,0 +1,26 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:auth": "playwright test 01-authentication",
+    "test:filters": "playwright test 03-customer-orders-filters",
+    "test:e2e": "playwright test 05-end-to-end",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}

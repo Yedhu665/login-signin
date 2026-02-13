@@ -1,0 +1,39 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\pages\DHOrdersPage.spec.js:6:1 › DH Orders - Add Order Flow with Auto-fill
+[1A[2K  1) [chromium] › tests\pages\DHOrdersPage.spec.js:6:1 › DH Orders - Add Order Flow with Auto-fill ─
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'DH Waste' }) resolved to 2 elements:
+        1) <a href="/biowaste-order/">…</a> aka getByRole('link', { name: ' DH Waste' })
+        2) <a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">…</a> aka getByRole('link', { name: ' DH Waste Settings    ' })
+
+    Call log:
+    [2m  - waiting for getByRole('link', { name: 'DH Waste' })[22m
+
+
+       at pages\DHOrdersPage.js:15
+
+      13 |     async navigateToDHOrders() {
+      14 |         await this.customerOrdersLink.click();
+    > 15 |         await this.dhWasteLink.click();
+         |                                ^
+      16 |         await this.page.waitForLoadState('networkidle');
+      17 |     }
+      18 |
+        at DHOrdersPage.navigateToDHOrders (C:\Users\yedhu\playwright-project\tests\pages\DHOrdersPage.js:15:32)
+        at C:\Users\yedhu\playwright-project\tests\pages\DHOrdersPage.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\pages-DHOrdersPage-DH-Orders---Add-Order-Flow-with-Auto-fill-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pages-DHOrdersPage-DH-Orders---Add-Order-Flow-with-Auto-fill-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\pages-DHOrdersPage-DH-Orders---Add-Order-Flow-with-Auto-fill-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] › tests\pages\DHOrdersPage.spec.js:6:1 › DH Orders - Add Order Flow with Auto-fill ──
