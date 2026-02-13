@@ -20,15 +20,23 @@ test.describe('Architect Sign Up and Login Flow', () => {
 
         await signupPage.signup(testUser.name, testUser.email, testUser.organisation, testUser.password);
 
+        // Handle plan selection screen if it appears
+        const planHeader = page.getByRole('heading', { name: 'Select a plan to continue' });
+        await planHeader.waitFor({ state: 'visible', timeout: 10000 }).catch(() => { });
+
+        if (await planHeader.isVisible()) {
+            await page.getByRole('button', { name: 'Choose Starter' }).click();
+        }
+
         // Verify signup success - adjust based on actual behavior (e.g., redirect to login or dashboard)
-        await expect(page).toHaveURL(/.*(login|dashboard)/);
+        await expect(page).toHaveURL(/.*(login|dashboard)/, { timeout: 15000 });
     });
 
     test('Login Flow', async ({ page }) => {
         const loginPage = new ArchitectLoginPage(page);
         await loginPage.goto();
 
-        await loginPage.login(process.env.LOGIN_USERNAME, process.env.LOGIN_PASSWORD);
+        await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
 
         const isSuccess = await loginPage.isLoginSuccessful();
         expect(isSuccess).toBeTruthy();
