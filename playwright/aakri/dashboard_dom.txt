@@ -1,0 +1,2991 @@
+<!DOCTYPE html><html lang="en"><head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+	<!-- Cross-Platform Icon and Theme Configuration -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/static/images/logos/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/static/images/logos/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/images/logos/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/static/images/logos/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/images/logos/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/static/images/logos/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/static/images/logos/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/static/images/logos/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/images/logos/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/static/images/logos/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/images/logos/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/static/images/logos/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/images/logos/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Bootstrap CSS -->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="/static/css/app.css" rel="stylesheet">
+	<link href="/static/css/icons.css" rel="stylesheet">
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<!-- Datatables for Pagnation -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/datetime-moment.js"></script>
+
+	<!-- JSZip for Excel export -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+	<!-- Buttons for Excel export -->
+	<script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
+
+	<!-- Datepicker  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Jquery Calender -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Select2 JS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+	
+<!-- Font Awesome 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	
+
+	<title>Aakri - Dashboard</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 
+			<div id="snow-container"></div>
+		 -->
+
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<!-- <img src="/static/images/logos/logo-icon.png" class="logo-icon" alt="logo icon"> -->
+				<img src="/static/images/logos/aakri-logoapp3.png" class="logo-icon" alt="logo icon">
+				<div class="logo-text"><img src="/static/images/logos/AakriLogo.png"></div>
+				<!-- <div class="logo-text"><img src="/static/images/logos/LOGO.png"></div> -->
+				<div class="toggle-icon ms-auto"><i class="bx bx-arrow-back"></i></div>
+			</div>
+			<div class="sidebar-menu d-flex align-items-start justify-content-between">
+				<ul class="metismenu" id="menu">
+					
+						<li data-id="menu-1" class="w-100 mm-active mm-show">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+									<div class="menu-title">Dashboard&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li class="mm-active">
+										<a href="/analytics-dashboard/" class="active">
+											<i class="fas fa-line-chart"></i>
+											<div class="menu-title">Analytics</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/operations-dashboard/">
+										<i class="fas fa-bar-chart"></i>
+										<div class="menu-title">Operations</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-2" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fa fa-user-check"></i></div>
+									<div class="menu-title">Customer&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/customers/">
+											<div class="parent-icon"><i class="bx bx-user"></i></div>
+											<div class="menu-title">Customers</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/submitted-customer-survey/">
+										<i class="fas fa-poll"></i>
+										<div class="menu-title">Customer Survey</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/submitted-drive-survey/">
+										<i class="fas fa-list-alt"></i>
+										<div class="menu-title">Drive Survey</div>
+									</a>
+								</li>
+								
+								
+							</ul>
+						</li>
+						<!-- 
+							<li data-id="menu-2" class="w-100">
+								<a href="/customers/">
+									<div class="parent-icon"><i class='bx bx-user'></i></div>
+									<div class="menu-title">Customers</div>
+								</a>
+							</li>
+						 -->
+					
+					
+						<li data-id="menu-3" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fa fa-qrcode"></i></div>
+									<div class="menu-title">QR Customer&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/qr-customers/">
+										<i class="fa fa-id-card"></i>
+										<div class="menu-title">QR Customers</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/service-zones/">
+										<i class="fa fa-map-signs" aria-hidden="true"></i>
+										<div class="menu-title">Service Zones</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-4" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="bx bx-cart"></i></div>
+									<div class="menu-title">Customer Orders&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/scrap-order/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">Scrap</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/biowaste-order/">
+										<i class="fas fa-biohazard"></i>
+										<div class="menu-title">DH Waste</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/order-map">
+										<i class="fas fa-biohazard"></i>
+										<div class="menu-title">DH Orders Map</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/cancel-request/">
+											<i class="fa fa-times-circle"></i>
+											<div class="menu-title">Cancel Request</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-5" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fas fa-coins"></i></div>
+									<div class="menu-title">Scrap Money&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/list-scrap-money-withdraw-request/">
+											<i class="fas fa-envelope"></i>
+											<div class="menu-title">Scrap Withdraw Request</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/list-bwg-scrap-money-withdraw-request/">
+											<i class="fas fa-inbox"></i>
+											<div class="menu-title">BWG Withdraw Request</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/list-all-scrap-money-transactions/">
+											<i class="fas fa-list-alt"></i>
+											<div class="menu-title">All Withdrawals</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-6" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-dumpster"></i></div>
+									<div class="menu-title">Bulk Waste Generator</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/bwg-client-requests/">
+										<i class="fas fa-file-signature"></i>
+										<div class="menu-title">Client Requests</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/bwg-client/">
+										<i class="bx bx-group"></i>
+										<div class="menu-title">BWG Clients</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/bwg-waste-bags/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">BWG Bag</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+						
+						
+						<li data-id="menu-7" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-boxes fa-xs"></i></div>
+									<div class="menu-title">BWG Orders&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/bwg-scrap-order/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">BWG Scrap Order</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/bwg-bio-order/">
+											<i class="fas fa-biohazard"></i>
+											<div class="menu-title">BWG DH Waste Order</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-8" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fas fa-coins"></i></div>
+									<div class="menu-title">Scrap Stocks&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/stock-inventory/">
+										<i class="fas fa-anchor"></i>
+										<div class="menu-title">Stock/ Inventory</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/vendors/">
+											<i class="fas fa-envelope"></i>
+											<div class="menu-title">Scrap Vendors</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/stock-category/">
+										<i class="fas fa-air-freshener"></i>
+										<div class="menu-title">Stock Categories</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/scrap-stock/">
+										<i class="fas fa-list-alt"></i>
+										<div class="menu-title">Add Stock</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/stock-sale/">
+										<i class="fas fa-history"></i>
+										<div class="menu-title">Sale History</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-9" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-globe fa-xs"></i></div>
+									<div class="menu-title">Service Locations&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/service-country/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Country</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-state/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">State</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-district/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">District</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-scrap-region/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Scrap - Region</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-localbody/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">DH Waste - Localbody</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-ward/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Ward</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-10" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-wrench fa-xs"></i></div>
+									<div class="menu-title">Scrap Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/scrap-type/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">Scrap Products</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/scrap-category/">
+											<i class="fas fa-recycle"></i>
+											<div class="menu-title">Scrap Category</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+						
+					
+						<li data-id="menu-11" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-gear fa-xs"></i></div>
+									<div class="menu-title">DH Waste Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/biowaste-type/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">DH Waste Products</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-category/">
+											<i class="fas fa-recycle"></i>
+											<div class="menu-title">DH Waste Category</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/waste-bags/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">DH Waste Bags</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+							
+					
+						<li data-id="menu-12" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon">
+										<span class="fa-stack" style="font-size: 5px;">
+											<i class="fas fa-truck fa-stack-2x"></i>
+											<i class="fas fa-cogs fa-stack-1x" style="color: white;"></i>
+										</span>
+									</div>
+									<div class="menu-title">Provider Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/cash-in-hand-of-provider/">
+											<i class="fas fa fa-inr"></i>
+											<div class="menu-title">Provider Cash Collections</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-roles/">
+											<i class="fas fa-user-shield"></i>
+											<div class="menu-title">Provider Roles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/pickup-vehicles/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Pickup Vehicles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/providers/">
+											<i class="fas fa-users"></i>
+											<div class="menu-title">Providers</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-payslips/">
+											<i class="fa-solid fa-receipt"></i>
+											<div class="menu-title">Provider Payslip</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-teams/">
+											<i class="fa fa-user-plus"></i>
+											<div class="menu-title">Provider Team</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/all-providers-location-track/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Provider Track</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>	
+					
+					
+							
+							<li data-id="menu-13" class="w-100">
+								<a href="/employee/">
+									<div class="parent-icon"><i class="bx bx-group"></i></div>
+									<div class="menu-title">Employees</div>
+								</a>
+							</li>
+						
+					
+					
+						<li data-id="menu-14" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="far fa-clipboard fa-sm"></i></div>
+									<div class="menu-title">Reports&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/aakri-record/">
+											<i class="fa fa-file"></i>
+											<div class="menu-title">Aakri All Record</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/aakri-record-monthly/">
+											<i class="fa fa-file-text"></i>
+											<div class="menu-title">Aakri All Record Monthly</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-collections/">
+											<i class="fa fa-money-bill"></i>
+											<div class="menu-title">Provider Collections</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-settlement-report/">
+											<i class="fa fa-hand-holding-usd"></i>
+											<div class="menu-title">Provider Settlement</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-recharge-report/">
+											<i class="fa fa-file-invoice-dollar"></i>
+											<div class="menu-title">Move to Wallet Reports</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-bill-report/">
+											<i class="fa fa-money-check"></i>
+											<div class="menu-title">Scrap Wallet Bill Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/scrap-report/">
+											<i class="fa fa-box"></i>
+											<div class="menu-title">Scrap Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/individual-scrap-report/">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<div class="menu-title">Individual Scrap Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-report/">
+											<i class="fas fa-biohazard"></i>
+											<div class="menu-title">DH Waste/BWG Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/combined-bioweight-report/">
+											<i class="fas fa-balance-scale"></i>
+											<div class="menu-title">Provider DH Waste Weight Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-gst-report/">
+											<i class="fa fa-file-text"></i>
+											<div class="menu-title">DH Waste GST Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-report/">
+											<i class="fas fa-wallet"></i>
+											<div class="menu-title">Wallet Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cash-log-report/">
+											<i class="fas fa-book"></i>
+											<div class="menu-title">Cash Log Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cash-flow-report/">
+											<i class="fas fa-cash-register"></i>
+											<div class="menu-title">Cash Flow Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wastebag-report/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">Bag Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/vehicle-report/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Vehicle Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/consolidated-providers-report/">
+											<i class="fas fa-clock"></i>
+											<div class="menu-title">Consolidated Provider Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-track-report/">
+											<i class="fa fa-history"></i>
+											<div class="menu-title">Provider Track Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/qr-report/">
+											<i class="fa-solid fa-qrcode"></i>
+											<div class="menu-title">QR Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste_wardwise_report/">
+											<i class="fa-solid fa-file-pdf"></i>
+											<div class="menu-title">DH Waste PDF Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/order-age-report/">
+											<i class="fa fa-hourglass-half"></i>
+											<div class="menu-title">Order Age Report</div>
+										</a>
+									</li>
+								
+								
+							</ul>
+						</li>
+					
+										
+						<li data-id="menu-15" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="bx bxl-whatsapp" style="font-size: 17px;"></i></div>
+									<div class="menu-title">Whatsapp Chatbot&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/chatbot-feedback/">
+											<i class="fas fa-list-alt"></i>
+											<div class="menu-title">Feedback</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/customer-enquiry/">
+											<i class="fas fa-question-circle"></i>
+											<div class="menu-title">Call Request</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+										
+										
+						<li data-id="menu-16" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-globe fa-sm"></i></div>
+									<div class="menu-title">Web Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/waste-dispatch/">
+											<i class="fa fa-industry"></i>
+											<div class="menu-title">Waste Dispatch</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+										
+										
+						<li data-id="menu-17" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-mobile-alt fa-sm"></i></div>
+									<div class="menu-title">App Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/dynamic-controls/">
+											<i class="fa fa-sliders" aria-hidden="true"></i>
+											<div class="menu-title">Dynamic Controls</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-category/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Service Category</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cancel-reasons/">
+											<i class="fas fa-comment-dots"></i>
+											<div class="menu-title">Order Cancel Reasons</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/drop-reasons/">
+											<i class="fas fa-comments"></i>
+											<div class="menu-title">Order Drop Reasons</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/frequently-asked-questions/">
+											<i class="fas fa-question"></i>
+											<div class="menu-title">FAQs</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/version-code/">
+											<i class="fas fa-phone"></i>
+											<div class="menu-title">Version Code</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/green-point-offers/">
+											<i class="fas fa-leaf"></i>
+											<div class="menu-title">Green Point Offers</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/razorpay-settings/">
+										<i class="fas fa-money-bill-wave"></i>
+										<div class="menu-title">Razorpay</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/get-updates/">
+										<i class="fas fa-redo"></i>
+										<div class="menu-title">Updations</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/location-accuracy/">
+										<i class="fas fa-location-arrow"></i>
+										<div class="menu-title">Location Accuracy</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/list-all-offers-and-coupons/">
+										<i class="fas fa-gift"></i>
+										<div class="menu-title">Offers and Coupons</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/contact-number-settings/">
+										<i class="fas fa-mobile-alt"></i>
+										<div class="menu-title">Contact Number Settings</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/list-marketplace-products/">
+										<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+										<div class="menu-title">Green Marketplace</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+							
+					
+						<li data-id="menu-18" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fa fa-user-circle fa-sm"></i></div>
+									<div class="menu-title">Admin Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/admin-roles/">
+											<i class="fa fa-shield"></i>
+											<div class="menu-title">Admin Roles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/admin-users/">
+											<i class="fas fa-user-tie"></i>
+											<div class="menu-title">Admin Users</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/lsgd-users/">
+											<i class="fas fa-user-tie"></i>
+											<div class="menu-title">LSGD Users</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>	
+											
+				</ul>
+			</div>
+		</div>
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class="bx bx-menu"></i></div>
+					<div class="user-box dropdown px-3 ms-auto">
+						<a class="nav-link" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<div class="user-info">
+								<p class="user-name mb-0" style="color: white;">Yedhu Testerr</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li>
+								<a class="dropdown-item" href="/admin-logout/" id="logout-btn">
+									<i class="fas fa-sign-out-alt"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="page-wrapper">
+			<div class="page-content">
+                
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- Font Awesome 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+	#revenue-datepicker-container {
+		pointer-events: auto;
+	}
+</style>
+
+<div class="inner-wrapper">
+	<!-- Overview Section -->
+	<section id="overview" class="overview-section">
+		<h2 class="title">Dashboard Overview</h2>
+		<div class="cards-grid">
+			<!-- Revenue Card -->
+			<div class="card  padding-none">
+				<div class="card-header">
+					<div>
+						<p class="label">Total Revenue</p>
+						<h3 class="value">₹15,78,93,488.79</h3>
+					</div>
+					<div class="icon-wrapper green">
+						<i class="fa fa-inr" aria-hidden="true"></i>
+					</div>
+				</div>
+				<span class="line bg-success"></span>
+			</div>
+
+			<!-- Active Customers Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Active Customers - Last 3 Months</p>
+						<h3 class="value">24615</h3>
+					</div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</div>
+				</div>
+				<span class="line bg-secondary2"></span>
+			</div>
+
+			<!-- Waste Collected Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Total Waste Collected</p>
+						<h3 class="value">58,71,349.67 Kg</h3>
+					</div>
+					<div class="icon-wrapper yellow">
+						<i class="fa fa-bitbucket" aria-hidden="true"></i>
+					</div>
+				</div>
+				<span class="line bg-warning"></span>
+			</div>
+
+			<!-- Environmental Impact Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Total CO₂ Saved</p>
+						<h3 class="value">5,413.12 Tons</h3>
+					</div>
+					<div class="icon-wrapper green">
+						<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<span class="line bg-danger"></span>
+			</div>
+		</div>
+
+		<div class="cards-grid">
+			<!-- Revenue Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Total Revenue</p>
+					</div>
+					<div class="icon-wrapper green">
+						<i class="fa fa-inr" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="table-responsive  active-customers-table h-75">
+					<table class="table table-borderless ">
+						<tbody style="width: 80;">
+							<tr class="d0">
+								<td>Scrap</td>
+								<td class="text-end"><span class="revenue-change green-color">₹3,59,40,070.11</span>
+								</td>
+							</tr>
+							<tr class="d3">
+								<td>Sanitary / Hazardous</td>
+								<td class="text-end"><span class="revenue-change red-color">₹12,19,53,418.69</span></td>
+							</tr>
+							<tr class="d2">
+								<td>RVSF</td>
+								<td class="text-end"><span class="revenue-change Orange-color">₹0</span></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<span class="line bg-success"></span>
+			</div>
+
+			<!-- Active Customers Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Active Customers - Last 3 Months</p>
+
+					</div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="table-responsive  active-customers-table ">
+					<table class="table table-borderless">
+						<tbody>
+							
+							<tr class="d">
+								<td>Ernakulam</td>
+								<td>15075</td>
+							</tr>
+							
+							<tr class="d">
+								<td>Thiruvananthapuram</td>
+								<td>3735</td>
+							</tr>
+							
+							<tr class="d">
+								<td>Kozhikode</td>
+								<td>2709</td>
+							</tr>
+							
+							<tr class="d">
+								<td>Thrissur</td>
+								<td>1461</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<span class="line bg-secondary2"></span>
+			</div>
+
+			<!-- Waste Collected Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Total Waste Collected</p>
+					</div>
+					<div class="icon-wrapper yellow">
+						<i class="fa fa-bitbucket" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="table-responsive active-customers-table ">
+					<table class="table table-borderless">
+						<tbody>
+							<tr class="d0">
+								<td>Scrap</td>
+								<td class="text-end">16,77,064.95 Kg</td>
+							</tr>
+							<tr class="d3">
+								<td>Sanitary / Hazardous</td>
+								<td class="text-end">41,94,284.72 Kg</td>
+							</tr>
+							<tr class="d2">
+								<td>RVSF </td>
+								<td class="text-end">0 Kg</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<span class="line bg-warning"></span>
+			</div>
+
+			<!-- Environmental Impact Card -->
+			<div class="card">
+				<div class="card-header padding-none">
+					<div>
+						<p class="label">Total CO₂ Saved</p>
+
+					</div>
+					<div class="icon-wrapper green">
+						<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="active-customers-table">
+					<table class="table  table-borderless">
+						<tbody>
+							<tr class="d0">
+								<td>Tree Saved</td>
+								<td class="text-end">12,237.72</td>
+							</tr>
+							<tr class="d1">
+								<td>Landfill Diverted</td>
+								<td class="text-end">4,692.41 tons</td>
+							</tr>
+							<tr class="d2">
+								<td>Water Saved</td>
+								<td class="text-end">59,661.52 m³</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<span class="line bg-danger"></span>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Revenue Section -->
+	<section id="revenue" class="revenue-section">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="revenue-header">
+					<h2 class="header-title">Revenue Analytics</h2>
+				</div>
+
+				<div class="btn-group d-flex flex-column flex-md-row align-items-start">
+					<div class="dropdown mb-2 mb-md-0 me-md-3" style="margin-right: 0;">
+						<select class="btn btn-success" id="revenue-district">
+							<option class="text-black bg-white" value="" hidden="">Select District</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="1">
+								Ernakulam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="4">
+								Alappuzha</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="5">
+								Kozhikode</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="8">
+								Kannur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="9">
+								Thiruvananthapuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="10">
+								Thrissur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="11">
+								Kasaragod</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="12">
+								Kollam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="13">
+								Kottayam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="14">
+								Malappuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="15">
+								Palakkad</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="16">
+								Pathanamthitta</option>
+							
+						</select>
+					</div>
+				
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="revenue-date-picker" data-bs-toggle="dropdown" aria-expanded="false">
+							Select Date
+						</button>
+						<ul class="dropdown-menu" id="revenue-date-dropdown" aria-labelledby="revenue-date-picker">
+							<li><a class="dropdown-item revenue-select-date" href="#" data-type="today">Today</a></li>
+							<li><a class="dropdown-item revenue-select-date" href="#" data-type="yesterday">Yesterday</a></li>
+							<li>
+								<div id="revenue-datepicker-container">
+									<input type="text" id="revenue-start-date-pick" class="form-control mb-2 hasDatepicker" placeholder="Start Date">
+									<input type="text" id="revenue-end-date-pick" class="form-control hasDatepicker" placeholder="End Date">
+									<button class="btn btn-success btn-sm mt-2 ms-2" id="revenue-apply-date">Apply</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<button type="text" id="reset-revenue" class="form-control mx-2" style="width: 100px">Reset</button>
+
+					<input type="hidden" id="revenue-start-date">
+					<input type="hidden" id="revenue-end-date">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Revenue Summary Cards -->
+		<div class="revenue-cards d-flex flex-column flex-md-row align-items-start">
+			<!-- Total Revenue Card -->
+			<div class="revenue-card w-100">
+				<div class="card-content">
+					<div>
+						<p class="card-title">Revenue This Year</p>
+						<label for="" class="text-white mt-1">&nbsp;</label>
+						<h3 class="card-value" id="total-revenue">₹2,22,46,759.82</h3>
+					</div>
+				</div>
+
+				<p class="skill-P">Scrap</p>
+				<div class="skill-wrapper">
+					<div class="skill scrap" style="width: 16.7%;">16.70%</div>
+				</div>
+
+				<p class="skill-P">Sanitary / Hazardous</p>
+				<div class="skill-wrapper">
+					<div class="skill bio" style="width: 83.3%;">83.30%</div>
+				</div>
+
+				<p class="skill-P">RVSF </p>
+				<div class="skill-wrapper">
+					<div class="skill rvsf" style="width: 0%;">0%</div>
+				</div>
+
+			</div>
+
+			<!-- Bio-waste Revenue -->
+			<div class="revenue-card scrap-revenue w-100">
+				<div class="card-content">
+					<div>
+						<p class="card-title">Scrap Revenue This Year</p>
+						<div class="d-flex flex-column flex-md-row align-items-start gap-5">
+							<div>
+								<label for="" class="text-white mt-2">Positive Revenue</label>
+								<h3 class="card-value" id="scrap-revenue-positive">₹14,87,434.76</h3>
+							</div>
+							<div>
+								<label for="" class="text-white mt-2">Negative Revenue</label>
+								<h3 class="card-value" id="scrap-revenue-negative">₹22,27,770.51</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="card-content">
+					<div>
+						<p class="card-title">Scrap Weight</p>
+						<h3 class="Order-white" id="scrap-revenue-weight">1,21,822.33 Kg</h3>
+					</div>
+					<div>
+						<p class="card-title">Scrap Order</p>
+						<h3 class="Order-white" id="scrap-count">2266</h3>
+					</div>
+				</div>
+				<p class="skill-P">Scrap</p>
+				<div class="skill-wrapper">
+					<div class="skill scrap" style="width: 16.7%;">16.70%</div>
+				</div>
+			</div>
+
+			<!-- Scrap Revenue -->
+			<div class="revenue-card bio-revenue w-100">
+				<div class="card-content">
+					<div>
+						<p class="card-title">Sanitary Revenue This Year</p>
+						<label for="" class="text-white mt-1">&nbsp;</label>
+						<h3 class="card-value" id="bio-revenue">₹1,85,31,554.55</h3>
+
+					</div>
+				</div>
+				<hr>
+				<div class="card-content">
+					<div>
+						<p class="card-title">Sanitary Weight</p>
+						<h3 class="Order-white" id="bio-revenue-weight">6,29,376.85 Kg</h3>
+					</div>
+					<div>
+						<p class="card-title">Sanitary Order</p>
+						<h3 class="Order-white" id="bio-count">65148</h3>
+					</div>
+				</div>
+				<p class="skill-P">Sanitary / Hazardous </p>
+				<div class="skill-wrapper">
+					<div class="skill bio" style="width: 83.3%;">83.30%</div>
+				</div>
+			</div>
+
+			<div class="revenue-card rvsf-revenue w-100">
+				<div class="card-content">
+					<div>
+						<p class="card-title">RVSF Revenue This Year</p>
+						<label for="" class="text-white mt-1">&nbsp;</label>
+						<h3 class="card-value" id="rvsf-revenue">₹0.00</h3>
+					</div>
+				</div>
+				<hr>
+
+				<div class="card-content">
+					<div>
+						<p class="card-title">RVSF Weight </p>
+						<h3 class="Order-white" id="rvsf-revenue-weight">0.00 Kg</h3>
+					</div>
+					<div>
+						<p class="card-title">RVSF Order </p>
+						<h3 class="Order-white" id="rvsf-count">0</h3>
+					</div>
+				</div>
+
+				<p class="skill-P">RVSF </p>
+				<div class="skill-wrapper">
+					<div class="skill rvsf" style="width: 0%;">0%</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Revenue Charts -->
+		<div class="revenue-charts d-flex flex-column flex-md-row align-items-start">
+			<!-- Revenue Trends Chart -->
+			<div class="chart-card w-100">
+				<h3 class="chart-title">Revenue Trends</h3>
+				<div class="chart-content">
+					<canvas id="revenue_trend_chart" style="display: block; box-sizing: border-box; height: 262.5px; width: 525px;" width="525" height="262"></canvas>
+				</div>
+			</div>
+			
+			<!-- Revenue Distribution -->
+			<div class="chart-card w-100">
+				<h3 class="chart-title">Revenue Distribution</h3>
+				<div class="chart-content">
+					<canvas id="revenue_distribution_chart" style="display: block; box-sizing: border-box; height: 262.5px; width: 525px;" width="525" height="262"></canvas>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Customer Section -->
+	<section id="customers" class="customers-section">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="revenue-header">
+					<h2 class="header-title">Customer Analytics</h2>
+				</div>
+
+				<div class="btn-group d-flex flex-column flex-md-row align-items-start">
+					<div class="dropdown mb-2 mb-md-0 me-md-3" style="margin-right: 0;">
+						<select class="btn btn-success" id="customer-district">
+							<option class="text-black bg-white" value="" hidden="">Select District</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="1">
+								Ernakulam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="4">
+								Alappuzha</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="5">
+								Kozhikode</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="8">
+								Kannur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="9">
+								Thiruvananthapuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="10">
+								Thrissur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="11">
+								Kasaragod</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="12">
+								Kollam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="13">
+								Kottayam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="14">
+								Malappuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="15">
+								Palakkad</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="16">
+								Pathanamthitta</option>
+							
+						</select>
+					</div>
+
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="customer-date-picker" data-bs-toggle="dropdown" aria-expanded="false">
+							Select Date
+						</button>
+
+						<ul class="dropdown-menu" id="customer-date-dropdown" aria-labelledby="customer-date-picker">
+							<li><a class="dropdown-item customer-select-date" href="#" data-type="today">Today</a></li>
+							<li><a class="dropdown-item customer-select-date" href="#" data-type="yesterday">Yesterday</a></li>
+							<li>
+								<div id="customer-datepicker-container">
+									<input type="text" id="customer-start-date-pick" class="form-control mb-2 hasDatepicker" placeholder="Start Date">
+									<input type="text" id="customer-end-date-pick" class="form-control hasDatepicker" placeholder="End Date">
+									<button class="btn btn-success btn-sm mt-2 ms-2" id="customer-apply-date">Apply</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<button type="text" id="reset-customer" class="form-control mx-2" style="width: 100px">Reset</button>
+
+					<input type="hidden" id="customer-start-date">
+					<input type="hidden" id="customer-end-date">
+
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Customer Stats -->
+		<div class="stats-container d-flex flex-column flex-md-row align-items-start">
+			<!-- Total Customers -->
+			<div class="stat-card w-100">
+				<div class="stat-content">
+					<div>
+						<p class="stat-label">Total Customers</p>
+						<h3 class="stat-value" id="total-customers">123821</h3>
+					</div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Active Subscriptions -->
+			<div class="stat-card w-100">
+				<div class="stat-content">
+					<div>
+						<p class="stat-label">Active Customers</p>
+						<h3 class="stat-value" id="active-customers">812</h3>
+					</div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Customer Satisfaction -->
+			<div class="stat-card w-100">
+				<div class="stat-content">
+					<div>
+						<p class="stat-label">New Customers</p>
+						<h3 class="stat-value" id="new-customers">43</h3>
+					</div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="revenue-charts d-flex flex-column flex-md-row align-items-start">
+			<div class="top-performing-card w-100">
+				<h3 class="chart-title">Top Performing Customers Per Revenue </h3>
+				<div class="areas-list" id="revenue-areas-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">Manju Pradeep</span>
+								<div class="area-revenue">
+									<span class="revenue-value">₹ 9972</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white"></span>
+								<div class="area-revenue">
+									<span class="revenue-value">₹ 9273</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">The Garden Court Appatments </span>
+								<div class="area-revenue">
+									<span class="revenue-value">₹ 4022</span>
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="top-performing-card w-100">
+			   <h3 class="chart-title">Top Performing Customers Per Weight</h3>
+			   <div class="areas-list" id="weight-areas-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">Manju Pradeep</span>
+								<div class="area-revenue">
+									<span class="revenue-value">203 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white"></span>
+								<div class="area-revenue">
+									<span class="revenue-value">176 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">Sreekala</span>
+								<div class="area-revenue">
+									<span class="revenue-value">64 KG</span>
+								</div>
+							</div>
+						</div>
+		   </div>
+		</div>
+		<div class="chart-card">
+			<h3 class="chart-title">Customers Trends</h3>
+			<div class="chart-content">
+				<canvas id="customerChart" style="display: block; box-sizing: border-box; height: 420px; width: 840px;" width="840" height="420"></canvas>
+			</div>
+		</div>
+	</section>
+
+	<!-- Waste Collected Section -->
+	<section id="waste" class="waste-section">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="revenue-header">
+					<h2 class="header-title">Waste Management</h2>
+				</div>
+
+				<div class="btn-group d-flex flex-column flex-md-row align-items-start">
+					<div class="dropdown mb-2 mb-md-0 me-md-3" style="margin-right: 0;">
+						<select class="btn btn-success" id="weight-district">
+							<option class="text-black bg-white" value="" hidden="">Select District</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="1">
+								Ernakulam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="4">
+								Alappuzha</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="5">
+								Kozhikode</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="8">
+								Kannur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="9">
+								Thiruvananthapuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="10">
+								Thrissur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="11">
+								Kasaragod</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="12">
+								Kollam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="13">
+								Kottayam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="14">
+								Malappuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="15">
+								Palakkad</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="16">
+								Pathanamthitta</option>
+							
+						</select>
+					</div>
+
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="weight-date-picker" data-bs-toggle="dropdown" aria-expanded="false">
+							Select Date
+						</button>
+
+						<ul class="dropdown-menu" id="weight-date-dropdown" aria-labelledby="weight-date-picker" data-bs-auto-close="outside">
+							<li><a class="dropdown-item weight-select-date" href="#" data-type="today">Today</a></li>
+							<li><a class="dropdown-item weight-select-date" href="#" data-type="yesterday">Yesterday</a>
+							</li>
+							<li>
+								<div id="weight-datepicker-container">
+									<input type="text" id="weight-start-date-pick" class="form-control mb-2 hasDatepicker" placeholder="Start Date">
+									<input type="text" id="weight-end-date-pick" class="form-control hasDatepicker" placeholder="End Date">
+									<button class="btn btn-success btn-sm mt-2 ms-2" id="weight-apply-date">Apply</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<button type="text" id="reset-waste" class="form-control mx-2" style="width: 100px">Reset</button>
+
+					<input type="hidden" id="weight-start-date">
+					<input type="hidden" id="weight-end-date">
+				</div>
+			</div>
+		</div>
+    	<hr>
+    
+        <div class="stats-container d-flex flex-column flex-md-row align-items-start">
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div>
+                        <p class="stat-label">Total Waste</p>
+                        <h3 class="stat-value" id="total-weight">58,71,349.67 Kg</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div class="scrap-revenue">
+                        <p class="stat-label">Scrap Waste</p>
+                        <h3 class="card-value" id="scrap-weight">16,77,064.95 Kg</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div class="bio-revenue">
+                        <p class="stat-label">Sanitary Waste</p>
+                        <h3 class="card-value" id="bio-weight">41,94,284.72 Kg</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+			<div class="stat-card w-100">
+                <div class="stat-content">
+                    <div class="rvsf-revenue">
+                        <p class="stat-label">RVSF Waste</p>
+                        <h3 class="card-value" id="rvsf-weight">0 Kg</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="revenue-charts d-flex flex-column flex-md-row align-items-start">
+			<div class="top-performing-card w-100">
+				<h3 class="chart-title">Top Performing District</h3>
+				<div class="areas-list" id="top-district-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Ernakulam</span>
+								<div class="area-revenue">
+									<span class="revenue-value">2931941 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Thiruvananthapuram</span>
+								<div class="area-revenue">
+									<span class="revenue-value">517769 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Kozhikode</span>
+								<div class="area-revenue">
+									<span class="revenue-value">430885 KG</span>
+								</div>
+							</div>
+						</div>
+			</div>
+
+			<div class="top-performing-card w-100">
+				<h3 class="chart-title">Top Performing Wards</h3>
+				<div class="areas-list" id="top-ward-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Edappally</span>
+								<div class="area-revenue">
+									<span class="revenue-value">115060 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Elamakkara North</span>
+								<div class="area-revenue">
+									<span class="revenue-value">113347 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Kadavanthra</span>
+								<div class="area-revenue">
+									<span class="revenue-value">90057 KG</span>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+
+		<div class="revenue-charts d-flex flex-column flex-md-row align-items-start">
+			<div class="top-performing-card w-100">
+				<h3 class="chart-title">Bottom Performing District</h3>
+				<div class="areas-list" id="bottom-district-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Kollam</span>
+								<div class="area-revenue">
+									<span class="revenue-value">3716 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Pathanamthitta</span>
+								<div class="area-revenue">
+									<span class="revenue-value">1014 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Kasaragod</span>
+								<div class="area-revenue">
+									<span class="revenue-value">547 KG</span>
+								</div>
+							</div>
+						</div>
+			</div>
+
+			<div class="top-performing-card w-100">
+				<h3 class="chart-title">Bottom Performing Wards</h3>
+				<div class="areas-list" id="bottom-ward-list">
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Thumpoly</span>
+								<div class="area-revenue">
+									<span class="revenue-value">0 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Poonthoppu</span>
+								<div class="area-revenue">
+									<span class="revenue-value">0 KG</span>
+								</div>
+							</div>
+						
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">Kommady</span>
+								<div class="area-revenue">
+									<span class="revenue-value">-2 KG</span>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+
+		<section>
+			<!-- Top Performing Areas -->
+			<div class="top-performing-card">
+				<h3 class="chart-title">Revenue Breakdown</h3>
+				<div class="Revenue-Breakdown-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Category</th>
+								<th scope="col">Revenue</th>
+								<th scope="col">Orders</th>
+								<th scope="col">Avg Value</th>
+							</tr>
+						</thead>
+						<tbody id="waste-type-list">
+							<tr>
+								<td>Iron first</td>
+								<td>₹2834051</td>
+								<td>5605</td>
+								<td>₹506</td>
+							</tr>
+						
+							<tr>
+								<td>News Paper</td>
+								<td>₹2771906</td>
+								<td>13604</td>
+								<td>₹204</td>
+							</tr>
+						
+							<tr>
+								<td>Carton Box</td>
+								<td>₹2255590</td>
+								<td>18273</td>
+								<td>₹123</td>
+							</tr>
+						
+							<tr>
+								<td>Aluminium</td>
+								<td>₹1820644</td>
+								<td>6441</td>
+								<td>₹283</td>
+							</tr>
+						
+							<tr>
+								<td>Text Book</td>
+								<td>₹1224494</td>
+								<td>8059</td>
+								<td>₹152</td>
+							</tr>
+						
+							<tr>
+								<td>Iron Second</td>
+								<td>₹1153201</td>
+								<td>8720</td>
+								<td>₹132</td>
+							</tr>
+						
+							<tr>
+								<td>Iron</td>
+								<td>₹924365</td>
+								<td>1955</td>
+								<td>₹473</td>
+							</tr>
+						
+							<tr>
+								<td>Brass</td>
+								<td>₹774141</td>
+								<td>1508</td>
+								<td>₹513</td>
+							</tr>
+						
+							<tr>
+								<td>Steel</td>
+								<td>₹679028</td>
+								<td>7521</td>
+								<td>₹90</td>
+							</tr>
+						
+							<tr>
+								<td>Soft Plastics</td>
+								<td>₹635280</td>
+								<td>12888</td>
+								<td>₹49</td>
+							</tr>
+						
+							<tr>
+								<td>Kids Diaper</td>
+								<td>₹39882238</td>
+								<td>248263</td>
+								<td>₹161</td>
+							</tr>
+						
+							<tr>
+								<td>Adult Diaper</td>
+								<td>₹8215118</td>
+								<td>29808</td>
+								<td>₹276</td>
+							</tr>
+						
+							<tr>
+								<td>Sanitary Pad</td>
+								<td>₹5366477</td>
+								<td>172300</td>
+								<td>₹31</td>
+							</tr>
+						
+							<tr>
+								<td>Medical Waste</td>
+								<td>₹1593069</td>
+								<td>5719</td>
+								<td>₹279</td>
+							</tr>
+						
+							<tr>
+								<td>Discreet</td>
+								<td>₹1406120</td>
+								<td>39508</td>
+								<td>₹36</td>
+							</tr>
+						
+							<tr>
+								<td>Hair</td>
+								<td>₹177129</td>
+								<td>738</td>
+								<td>₹240</td>
+							</tr>
+						
+							<tr>
+								<td>Gloves</td>
+								<td>₹9072</td>
+								<td>75</td>
+								<td>₹121</td>
+							</tr>
+						
+							<tr>
+								<td>Urine Bags</td>
+								<td>₹2530</td>
+								<td>30</td>
+								<td>₹84</td>
+							</tr>
+						
+							<tr>
+								<td>Needles</td>
+								<td>₹2092</td>
+								<td>19</td>
+								<td>₹110</td>
+							</tr>
+						
+							<tr>
+								<td>Intravenous Tubes</td>
+								<td>₹1628</td>
+								<td>22</td>
+								<td>₹74</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<!-- Environment Section -->
+	<section id="environment" class="environment-section">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="revenue-header">
+					<h2 class="header-title">Environmental Impact</h2>
+				</div>
+
+				<div class="btn-group d-flex flex-column flex-md-row align-items-start">
+					<div class="dropdown mb-2 mb-md-0 me-md-3" style="margin-right: 0;">
+						<select class="btn btn-success" id="env-district">
+							<option class="text-black bg-white" value="" hidden="">Select District</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="1">
+								Ernakulam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="4">
+								Alappuzha</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="5">
+								Kozhikode</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="8">
+								Kannur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="9">
+								Thiruvananthapuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="10">
+								Thrissur</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="11">
+								Kasaragod</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="12">
+								Kollam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="13">
+								Kottayam</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="14">
+								Malappuram</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="15">
+								Palakkad</option>
+							
+							<option class="text-black bg-white text-center pr-5" value="16">
+								Pathanamthitta</option>
+							
+						</select>
+					</div>
+
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="env-date-picker" data-bs-toggle="dropdown" aria-expanded="false">
+							Select Date
+						</button>
+
+						<ul class="dropdown-menu" id="env-date-dropdown" aria-labelledby="env-date-picker" data-bs-auto-close="outside">
+							<li><a class="dropdown-item env-select-date" href="#" data-type="today">Today</a></li>
+							<li><a class="dropdown-item env-select-date" href="#" data-type="yesterday">Yesterday</a>
+							</li>
+							<li>
+								<div id="env-datepicker-container">
+									<input type="text" id="env-start-date-pick" class="form-control mb-2 hasDatepicker" placeholder="Start Date">
+									<input type="text" id="env-end-date-pick" class="form-control hasDatepicker" placeholder="End Date">
+									<button class="btn btn-success btn-sm mt-2 ms-2" id="env-apply-date">Apply</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<button type="text" id="reset-environmental" class="form-control mx-2" style="width: 100px">Reset</button>
+
+					<input type="hidden" id="env-start-date">
+					<input type="hidden" id="env-end-date">
+				</div>
+			</div>
+		</div>
+    	<hr>
+        <!-- Waste collected Stats -->
+        <div class="stats-container d-flex flex-column flex-md-row align-items-start mb-5 p-4">
+            <!-- Co2 Saved -->
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div>
+                        <p class="stat-label">CO2 Savings</p>
+                        <h3 class="stat-value" id="co2-saved-val">5,413.12 Tons</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+    
+            <!-- Active Subscriptions -->
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div>
+                        <p class="stat-label">Landfill Diverted</p>
+                        <h3 class="stat-value" id="landfill-saved-val">4,692.41 Tons</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+					</div>
+                </div>
+            </div>
+    
+            <!-- Customer Satisfaction -->
+            <div class="stat-card w-100">
+                <div class="stat-content">
+                    <div>
+                        <p class="stat-label">Trees Saved</p>
+                        <h3 class="stat-value" id="trees-saved-val">12,237.72</h3>
+                    </div>
+					<div class="icon-wrapper blue">
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script>
+
+	function formatDateToDisplay(dateObj) {
+		let day = String(dateObj.getDate()).padStart(2, '0');
+		let month = String(dateObj.getMonth() + 1).padStart(2, '0');
+		let year = dateObj.getFullYear();
+		return `${day}-${month}-${year}`;
+	}
+
+	$(document).ready(function () {
+		function formatDateToYYYYMMDD(date) {
+			return date.getFullYear() + '-' +
+				String(date.getMonth() + 1).padStart(2, '0') + '-' +
+				String(date.getDate()).padStart(2, '0');
+		}
+
+		// Revenue Section 
+		let charts = {};
+		function createChart(ctx, type, chartId, label, scrap, bio, rvsf, isTrend, labels) {
+			// Destroy existing chart if it exists
+			if (charts[chartId]) {
+				charts[chartId].destroy();
+			}
+
+			charts[chartId] = new Chart(ctx, {
+				type: type,
+				data: {
+					labels: labels,
+					datasets: [
+						{
+							label: 'Scrap Revenue (₹)',
+							data: scrap,
+							backgroundColor: isTrend ? 'rgba(116, 194, 92, 0.5)' : 'rgba(116, 194, 92, 1)',
+							borderColor: 'rgba(116, 194, 92, 1)',
+							borderWidth: 1,
+							fill: false
+						},
+						{
+							label: 'Sanitary Revenue (₹)',
+							data: bio,
+							backgroundColor: isTrend ? 'rgba(253, 53, 80, 0.5)' : 'rgba(253, 53, 80, 1)',
+							borderColor: 'rgba(253, 53, 80, 1)',
+							borderWidth: 1,
+							fill: false
+						},
+						{
+							label: 'RVSF Revenue (₹)',
+							data: rvsf,
+							backgroundColor: isTrend ? 'rgba(255, 193, 7, 0.5)' : 'rgba(255, 193, 7, 1)',
+							borderColor: 'rgba(255, 193, 7, 1)',
+							borderWidth: 1,
+							fill: false
+						}
+					]
+				},
+				options: {
+					responsive: true,
+					scales: {
+						x: { ticks: { color: 'white' } },
+						y: {
+							beginAtZero: true,
+							ticks: {
+								color: 'white',
+								callback: function (value) { return '₹' + value.toLocaleString(); }
+							}
+						}
+					},
+					plugins: {
+						legend: { labels: { color: 'white' } }
+					}
+				}
+			});
+		}
+
+		function fetchRevenueData() {
+			$.ajax({
+				url: "/revenue-analytics-filter/",
+				type: "GET",
+				data: {
+					district_id: $("#revenue-district").val(),
+					start_date: $("#revenue-start-date").val(),
+					end_date: $("#revenue-end-date").val()
+				},
+				success: function (response) {
+					$("#total-revenue").text(`₹${response.total_revenue}`)
+
+					$(".skill.scrap").text(`${response.scrap_percentage}%`)
+					$("#scrap-revenue-positive").text(`₹${response.positive_scrap_revenue}`)
+					$("#scrap-revenue-negative").text(`₹${response.negative_scrap_revenue}`)
+					$("#scrap-revenue-weight").text(`${response.scrap_revenue_weight} Kg`)
+					$("#scrap-count").text(`${response.scrap_count}`)
+					$(".skill.scrap").css("width", `${response.scrap_percentage}%`);
+
+					$(".skill.bio").text(`${response.bio_percentage}%`)
+					$("#bio-revenue").text(`₹${response.bio_revenue}`)
+					$("#bio-revenue-weight").text(`${response.bio_revenue_weight} Kg`)
+					$("#bio-count").text(`${response.bio_count}`)
+					$(".skill.bio").css("width", `${response.bio_percentage}%`);
+
+					$(".skill.rvsf").text(`${response.rvsf_percentage}%`)
+					$("#rvsf-revenue").text(`₹${response.rvsf_revenue}`)
+					$("#rvsf-revenue-weight").text(`${response.rvsf_revenue_weight} Kg`)
+					$("#rvsf-count").text(`${response.rvsf_count}`)
+					$(".skill.rvsf").css("width", `${response.rvsf_percentage}%`);
+
+					// Create Revenue Trend Chart (Line Chart)
+					createChart(
+						document.getElementById('revenue_trend_chart').getContext('2d'),
+						'line',
+						'revenue_trend_chart',
+						'Revenue Trend',
+						response.scrap_revenue_data,
+						response.bio_revenue_data,
+						response.rvsf_revenue_data,
+						true,
+						response.labels
+					);
+
+					// Create Revenue Distribution Chart (Bar Chart)
+					createChart(
+						document.getElementById('revenue_distribution_chart').getContext('2d'),
+						'bar',
+						'revenue_distribution_chart',
+						'Revenue Distribution',
+						response.scrap_revenue_data,
+						response.bio_revenue_data,
+						response.rvsf_revenue_data,
+						false,
+						response.labels
+					);
+				}
+			});
+		}
+
+		$('#revenue-district').change(function () {
+			fetchRevenueData();
+		})
+
+		$('#revenue-start-date-pick, #revenue-end-date-pick').datepicker({
+			format: "yyyy-mm-dd",
+			autoclose: false,
+			todayHighlight: true
+		});
+
+		$(".revenue-select-date").click(function (e) {
+			e.preventDefault();
+			let type = $(this).data("type");
+			let selectedDate = "";
+
+			if (type === "today") {
+				let today = new Date();
+				selectedDate = today.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(today);
+			} else if (type === "yesterday") {
+				let yesterday = new Date();
+				yesterday.setDate(yesterday.getDate() - 1);
+				selectedDate = yesterday.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(yesterday);
+			}
+
+			// Set button text & hidden input for AJAX
+			$("#revenue-date-picker").text(formattedDate);
+			$("#revenue-start-date").val(selectedDate).trigger('change');
+			$("#revenue-end-date").val(selectedDate).trigger('change');
+
+			fetchRevenueData();
+		});
+
+		$("#revenue-apply-date").click(function () {
+			let start = $("#revenue-start-date-pick").val();
+			let end = $("#revenue-end-date-pick").val();
+			if (start && end) {
+				let startDate = new Date(start);
+				let endDate = new Date(end);
+
+				if (startDate <= endDate) {
+					$("#revenue-date-picker").text(start + " to " + end);
+					$("#revenue-start-date").val(formatDateToYYYYMMDD(startDate));
+					$("#revenue-end-date").val(formatDateToYYYYMMDD(endDate));
+					fetchRevenueData();
+				} else {
+					alert("Start date must be before or equal to end date.");
+
+					// Clear all related fields
+					$("#revenue-date-picker").text("");
+					$("#revenue-start-date").val("");
+					$("#revenue-end-date").val("");
+					$("#revenue-start-date-pick").val("");
+					$("#revenue-end-date-pick").val("");
+				}
+			}
+		});
+
+		fetchRevenueData();
+
+		function toTitleCase(str) {
+			if (!str) return '';
+			return str.replace(/\w\S*/g, (txt) => {
+				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+			});
+		}
+
+		// Customer Section 
+		let customerChart = null;
+		function fetchCustomerData() {
+			$.ajax({
+				url: "/customer-analytics-filter/",
+				type: "GET",
+				data: {
+					district_id: $("#customer-district").val(),
+					start_date: $("#customer-start-date").val(),
+					end_date: $("#customer-end-date").val()
+				},
+				success: function (response) {
+					$("#active-customers").text(response.active_customers);
+					$("#new-customers").text(response.new_customers);
+
+					const revenue_container = document.getElementById("revenue-areas-list");
+					revenue_container.innerHTML = "";
+					response.top_customers_by_revenue.forEach((customer, index) => {
+						revenue_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">${toTitleCase(customer.full_name)}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">₹ ${Math.round(customer.total_revenue)}</span>
+								</div>
+							</div>
+						`;
+					});
+
+					const weight_container = document.getElementById("weight-areas-list");
+					weight_container.innerHTML = "";
+					response.top_customers_by_weight.forEach((customer, index) => {
+						weight_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name text-white">${toTitleCase(customer.full_name)}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">${Math.round(customer.total_weight)} KG</span>
+								</div>
+							</div>
+						`;
+					});
+
+					// Destroy existing chart before creating a new one
+					if (customerChart !== null) {
+						customerChart.destroy();
+					}
+
+					const ctx = document.getElementById("customerChart").getContext("2d");
+					customerChart = new Chart(ctx, {
+						type: "bar",  // Change to "line" for a line chart
+						data: {
+							labels: response.trends_data.labels,  // Months (YYYY-MM)
+							datasets: [{
+								label: "Customers Joined",
+								data: response.trends_data.data,  // Customer count per month
+								backgroundColor: "rgba(54, 162, 235, 0.6)",
+								borderColor: "rgba(54, 162, 235, 1)",
+								borderWidth: 1
+							}]
+						},
+						options: {
+							responsive: true,
+							scales: {
+								y: {
+									beginAtZero: true
+								}
+							}
+						}
+					});
+				}
+			});
+		}
+
+		$('#customer-district').change(function () {
+			fetchCustomerData();
+		})
+
+		$('#customer-start-date-pick, #customer-end-date-pick').datepicker({
+			format: "yyyy-mm-dd",
+			autoclose: true,
+			todayHighlight: true
+		});
+
+		$(".customer-select-date").click(function (e) {
+			e.preventDefault();
+			let type = $(this).data("type");
+			let selectedDate = "";
+
+			if (type === "today") {
+				let today = new Date();
+				selectedDate = today.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(today);
+			} else if (type === "yesterday") {
+				let yesterday = new Date();
+				yesterday.setDate(yesterday.getDate() - 1);
+				selectedDate = yesterday.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(yesterday);
+			}
+
+
+			// Set button text & hidden input for AJAX
+			$("#customer-date-picker").text(formattedDate);
+			$("#customer-start-date").val(selectedDate).trigger('change');
+			$("#customer-end-date").val(selectedDate).trigger('change');
+
+			fetchCustomerData();
+		});
+
+		$("#customer-apply-date").click(function () {
+			let start = $("#customer-start-date-pick").val();
+			let end = $("#customer-end-date-pick").val();
+
+			if (start && end) {
+				let startDate = new Date(start);
+				let endDate = new Date(end);
+
+				if (startDate <= endDate) {
+					$("#customer-date-picker").text(start + " to " + end);
+					$("#customer-start-date").val(formatDateToYYYYMMDD(startDate));
+					$("#customer-end-date").val(formatDateToYYYYMMDD(endDate));
+					fetchCustomerData();
+				} else {
+					alert("Start date must be before or equal to end date.");
+
+					// Clear all related fields
+					$("#customer-date-picker").text("");
+					$("#customer-start-date").val("");
+					$("#customer-end-date").val("");
+					$("#customer-start-date-pick").val("");
+					$("#customer-end-date-pick").val("");
+				}
+			}
+		});
+
+		fetchCustomerData();
+
+		// Weight Section 
+		function fetchWeightData() {
+			$.ajax({
+				url: "/weight-analytics-filter/",
+				type: "GET",
+				data: {
+					district_id: $("#weight-district").val(),
+					start_date: $("#weight-start-date").val(),
+					end_date: $("#weight-end-date").val()
+				},
+				success: function (response) {
+					$("#total-weight").text(`${response.total_weight} Kg`)
+					$("#scrap-weight").text(`${response.total_scrap_weight} Kg`)
+					$("#bio-weight").text(`${response.total_bio_weight} Kg`)
+					$("#rvsf-weight").text(`${0} Kg`)
+
+					const top_district_container = document.getElementById("top-district-list");
+					top_district_container.innerHTML = "";
+					response.top_districts.forEach((district, index) => {
+						let districtName = district.district_name
+							.toLowerCase()
+							.split(" ")
+							.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+							.join(" ");
+
+						top_district_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">${districtName}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">${Math.round(district.total_weight || 0, 2)} KG</span>
+								</div>
+							</div>
+						`;
+					});
+
+					const bottom_district_container = document.getElementById("bottom-district-list");
+					bottom_district_container.innerHTML = "";
+					response.bottom_districts.forEach((district, index) => {
+						let districtName = district.district_name
+							.toLowerCase()
+							.split(" ")
+							.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+							.join(" ");
+
+						bottom_district_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">${districtName}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">${Math.round(district.total_weight || 0, 2)} KG</span>
+								</div>
+							</div>
+						`;
+					});
+
+					const top_ward_container = document.getElementById("top-ward-list");
+					top_ward_container.innerHTML = "";
+					response.top_wards.forEach((ward, index) => {
+						let wardName = ward.ward_name
+							.toLowerCase()
+							.split(" ")
+							.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+							.join(" ");
+
+						top_ward_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">${wardName}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">${Math.round(ward.total_weight || 0, 2)} KG</span>
+								</div>
+							</div>
+						`;
+					});
+
+					const bottom_ward_container = document.getElementById("bottom-ward-list");
+					bottom_ward_container.innerHTML = "";
+					response.bottom_wards.forEach((ward, index) => {
+						let wardName = ward.ward_name
+							.toLowerCase()
+							.split(" ")
+							.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+							.join(" ");
+						bottom_ward_container.innerHTML += `
+							<div class="area">
+								<div class="icon-wrapper blue">
+									<i class="fa fa-trophy" aria-hidden="true"></i>
+								</div>
+								<span class="area-name">${wardName}</span>
+								<div class="area-revenue">
+									<span class="revenue-value">${Math.round(ward.total_weight || 0, 2)} KG</span>
+								</div>
+							</div>
+						`;
+					});
+
+					const waste_type_container = document.getElementById("waste-type-list");
+					waste_type_container.innerHTML = "";
+					response.top_scrap_type.forEach((scrap, index) => {
+						waste_type_container.innerHTML += `
+							<tr>
+								<td>${scrap.scrap_name}</td>
+								<td>₹${Math.round(scrap.total_price || 0, 2)}</td>
+								<td>${scrap.count}</td>
+								<td>₹${Math.round(scrap.average_price || 0, 2)}</td>
+							</tr>
+						`;
+					});
+					response.top_biowaste_type.forEach((bio, index) => {
+						waste_type_container.innerHTML += `
+							<tr>
+								<td>${bio.bio_name}</td>
+								<td>₹${Math.round(bio.total_bill || 0, 2)}</td>
+								<td>${bio.count}</td>
+								<td>₹${Math.round(bio.average_bill || 0, 2)}</td>
+							</tr>
+						`;
+					});
+				}
+			});
+		}
+
+		$('#weight-district').change(function () {
+			fetchWeightData();
+		})
+
+		$('#weight-start-date-pick, #weight-end-date-pick').datepicker({
+			format: "yyyy-mm-dd",
+			autoclose: false,
+			todayHighlight: true
+		});
+
+		$(".weight-select-date").click(function (e) {
+			e.preventDefault();
+			let type = $(this).data("type");
+			let selectedDate = "";
+
+			if (type === "today") {
+				let today = new Date();
+				selectedDate = today.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(today);
+			} else if (type === "yesterday") {
+				let yesterday = new Date();
+				yesterday.setDate(yesterday.getDate() - 1);
+				selectedDate = yesterday.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(yesterday);
+			}
+
+			// Set button text & hidden input for AJAX
+			$("#weight-date-picker").text(formattedDate);
+			$("#weight-start-date").val(selectedDate).trigger('change');
+			$("#weight-end-date").val(selectedDate).trigger('change');
+
+			fetchWeightData();
+		});
+
+		$("#weight-apply-date").click(function () {
+			let start = $("#weight-start-date-pick").val();
+			let end = $("#weight-end-date-pick").val();
+
+			if (start && end) {
+				let startDate = new Date(start);
+				let endDate = new Date(end);
+
+				if (startDate <= endDate) {
+					$("#weight-date-picker").text(start + " to " + end);
+					$("#weight-start-date").val(formatDateToYYYYMMDD(startDate));
+					$("#weight-end-date").val(formatDateToYYYYMMDD(endDate));
+					fetchWeightData();
+				} else {
+					alert("Start date must be before or equal to end date.");
+
+					// Clear fields
+					$("#weight-date-picker").text("");
+					$("#weight-start-date").val("");
+					$("#weight-end-date").val("");
+					$("#weight-start-date-pick").val("");
+					$("#weight-end-date-pick").val("");
+				}
+			}
+		});
+
+		fetchWeightData();
+
+		// Environment Section 
+		function fetchEnvironmentData() {
+			$.ajax({
+				url: "/environment-analytics-filter/",
+				type: "GET",
+				data: {
+					district_id: $("#env-district").val(),
+					start_date: $("#env-start-date").val(),
+					end_date: $("#env-end-date").val()
+				},
+				success: function (response) {
+					$("#co2-saved-val").text(`${response.co2_saved} Tons`)
+					$("#trees-saved-val").text(`${response.trees_saved}`)
+					$("#landfill-saved-val").text(`${response.landfill_diverted} Tons`)
+				}
+			});
+		}
+
+		$('#env-district').change(function () {
+			fetchEnvironmentData();
+		})
+
+		$('#env-start-date-pick, #env-end-date-pick').datepicker({
+			format: "yyyy-mm-dd",
+			autoclose: false,
+			todayHighlight: true
+		});
+
+		$(".env-select-date").click(function (e) {
+			e.preventDefault();
+			let type = $(this).data("type");
+			let selectedDate = "";
+
+			if (type === "today") {
+				let today = new Date();
+				selectedDate = today.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(today);
+			} else if (type === "yesterday") {
+				let yesterday = new Date();
+				yesterday.setDate(yesterday.getDate() - 1);
+				selectedDate = yesterday.toISOString().split("T")[0];
+				formattedDate = formatDateToDisplay(today);
+			}
+
+			// Set button text & hidden input for AJAX
+			$("#env-date-picker").text(formattedDate);
+			$("#env-start-date").val(selectedDate).trigger('change');
+			$("#env-end-date").val(selectedDate).trigger('change');
+
+			fetchEnvironmentData();
+		});
+
+		$("#env-apply-date").click(function () {
+			let start = $("#env-start-date-pick").val();
+			let end = $("#env-end-date-pick").val();
+
+			if (start && end) {
+				let startDate = new Date(start);
+				let endDate = new Date(end);
+
+				if (startDate <= endDate) {
+					$("#env-date-picker").text(start + " to " + end);
+					$("#env-start-date").val(formatDateToYYYYMMDD(startDate));
+					$("#env-end-date").val(formatDateToYYYYMMDD(endDate));
+					fetchEnvironmentData();
+				} else {
+					alert("Start date must be before or equal to end date.");
+
+					// Clear all related fields
+					$("#env-date-picker").text("");
+					$("#env-start-date").val("");
+					$("#env-end-date").val("");
+					$("#env-start-date-pick").val("");
+					$("#env-end-date-pick").val("");
+				}
+			}
+		});
+
+		fetchEnvironmentData();
+
+		$('#reset-revenue, #reset-customer, #reset-waste, #reset-environmental').click(function () {
+			const isRevenue = $(this).attr('id') === 'reset-revenue';
+			const isCustomer = $(this).attr('id') === 'reset-customer';
+			const isWaste = $(this).attr('id') === 'reset-waste';
+			const prefix = isRevenue ? 'revenue' : isCustomer ? 'customer' : isWaste ? 'weight' : 'env';
+			
+			$(`#${prefix}-district`).prop('selectedIndex', 0);
+			$(`#${prefix}-start-date-pick`).val('');
+			$(`#${prefix}-end-date-pick`).val('');
+			$(`#${prefix}-date-picker`).text('Select Date');
+			$(`#${prefix}-start-date`).val('').trigger('change');
+			$(`#${prefix}-end-date`).val('').trigger('change');
+			$(`.${prefix}-select-date`).removeClass('active');
+
+			isRevenue ? fetchRevenueData() : isCustomer ? fetchCustomerData() : isWaste ? fetchWeightData() : fetchEnvironmentData();
+		});
+	});
+</script>
+
+
+			</div>
+		</div>
+		<div class="overlay toggle-icon"></div>
+		<a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+		<footer class="page-footer">
+			<p class="mb-0 text-white ">Copyright ©<span id="year">2026</span> . All right reserved and maintained by Aakri Impact Pvt Ltd.</p>
+		</footer>
+	</div>
+
+	<!-- <div>
+	
+			<div class="santa-container">
+				<img src="/static/images/gifs/xmas_santa.gif" alt="Santa" class="santa">
+			</div>
+		
+	</div> -->
+
+	<!-- Logout at 12.1 AM -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Set the current year in the footer
+			document.getElementById("year").textContent = new Date().getFullYear();
+		});
+		const logoutUrl = "/admin-logout/"; // Your logout URL
+
+		$('a[href*="admin-logout"], #logout-btn').on('click', function(e) {
+			// Clear the district and localbody from localStorage
+			localStorage.removeItem('district');
+			localStorage.removeItem('localbody');
+			// Let the link proceed normally to the logout URL
+		});
+		
+		function getMillisecondsUntilTargetTime() {
+			// Get current date and time in local timezone
+			const now = new Date();
+			
+			// Get current time in IST (UTC+5:30)
+			const nowIST = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Kolkata"}));
+			
+			// Set target time to 12:45 AM IST today
+			const targetTimeIST = new Date(nowIST);
+			targetTimeIST.setHours(0, 1, 0, 0);
+			
+			if (nowIST > targetTimeIST) {
+				targetTimeIST.setDate(targetTimeIST.getDate() + 1);
+			}
+			
+			// Calculate difference in milliseconds
+			const timeLeft = targetTimeIST - nowIST;
+			
+			return timeLeft;
+		}
+
+		// const msUntilTargetTime = getMillisecondsUntilTargetTime();
+		// if (msUntilTargetTime > 0) {
+		// 	setTimeout(() => {
+		// 		window.location.href = logoutUrl;
+		// 	}, msUntilTargetTime);
+		// }
+	</script>
+		
+	<!-- 
+		<script>
+			// Create a canvas element
+			const canvas = document.createElement('canvas');
+			canvas.id = 'snowCanvas';
+			canvas.style.position = 'fixed';
+			canvas.style.top = 0;
+			canvas.style.left = 0;
+			canvas.style.width = '100%';
+			canvas.style.height = '100%';
+			canvas.style.pointerEvents = 'none';
+			canvas.style.zIndex = 9999;
+			document.body.appendChild(canvas);
+
+			const ctx = canvas.getContext('2d');
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+
+			const numFlakes = 100;
+			const flakes = [];
+
+			for (let i = 0; i < numFlakes; i++) {
+				flakes.push({
+					x: Math.random() * canvas.width,
+					y: Math.random() * canvas.height,
+					r: Math.random() * 4 + 1,
+					d: Math.random() * numFlakes
+				});
+			}
+
+			function drawSnow() {
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				ctx.fillStyle = 'white';
+				ctx.beginPath();
+				for (let i = 0; i < numFlakes; i++) {
+					let f = flakes[i];
+					ctx.moveTo(f.x, f.y);
+					ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+				}
+				ctx.fill();
+				updateSnow();
+			}
+
+			let angle = 0;
+
+			function updateSnow() {
+				angle += 0.01;
+				for (let i = 0; i < numFlakes; i++) {
+					let f = flakes[i];
+					f.y += Math.cos(angle + f.d) + 1 + f.r / 2;
+					f.x += Math.sin(angle) * 2;
+
+					if (f.x > canvas.width + 5 || f.x < -5 || f.y > canvas.height) {
+						f.x = Math.random() * canvas.width;
+						f.y = -10;
+					}
+				}
+			}
+
+			setInterval(drawSnow, 33);
+
+			window.addEventListener('resize', () => {
+				canvas.width = window.innerWidth;
+				canvas.height = window.innerHeight;
+			});
+		</script>
+	 -->
+	
+	<!-- Bootstrap -->
+	<script src="/static/js/bootstrap.bundle.min.js"></script>
+	<script src="/static/js/app.js"></script>
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

@@ -1,0 +1,52 @@
+﻿[dotenv@17.3.1] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  specify custom .env file path with { path: '/custom/path/.env' }
+node : DIAGNOSTIC 
+ERROR: url.includes is 
+not a function
+At line:1 char:1
++ node 
+explore_orders.js > 
+explore_error.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (DIAGNOSTIC ER   
+ RO... not a functi    
+on:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Stack Trace: 
+TypeError: 
+url.includes is not a 
+function
+    at page.waitForURL.
+timeout (C:\Users\yedhu
+\playwright-project\pla
+ywright\aakri\explore_o
+rders.js:18:42)
+    at urlMatches (C:\U
+sers\yedhu\playwright-p
+roject\node_modules\pla
+ywright-core\lib\utils\
+isomorphic\urlMatch.js:
+108:10)
+    at 
+Frame.waitForURL (C:\Us
+ers\yedhu\playwright-pr
+oject\node_modules\play
+wright-core\lib\client\
+frame.js:162:40)
+    at Page.waitForURL 
+(C:\Users\yedhu\playwri
+ght-project\node_module
+s\playwright-core\lib\c
+lient\page.js:322:34)
+    at C:\Users\yedhu\p
+laywright-project\playw
+right\aakri\explore_ord
+ers.js:18:20
+Error screenshot saved to: C:\Users\yedhu\playwright-project\playwright\aakri\error_screenshot.png

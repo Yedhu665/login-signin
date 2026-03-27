@@ -1,0 +1,446 @@
+[
+  {
+    "text": "Dashboard",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Analytics",
+    "href": "/analytics-dashboard/"
+  },
+  {
+    "text": "Operations",
+    "href": "/operations-dashboard/"
+  },
+  {
+    "text": "Customer",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Customers",
+    "href": "/customers/"
+  },
+  {
+    "text": "Customer Survey",
+    "href": "/submitted-customer-survey/"
+  },
+  {
+    "text": "Drive Survey",
+    "href": "/submitted-drive-survey/"
+  },
+  {
+    "text": "QR Customer",
+    "href": "javascript:;"
+  },
+  {
+    "text": "QR Customers",
+    "href": "/qr-customers/"
+  },
+  {
+    "text": "Service Zones",
+    "href": "/service-zones/"
+  },
+  {
+    "text": "Customer Orders",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Scrap",
+    "href": "/scrap-order/"
+  },
+  {
+    "text": "DH Waste",
+    "href": "/biowaste-order/"
+  },
+  {
+    "text": "DH Orders Map",
+    "href": "/order-map"
+  },
+  {
+    "text": "Cancel Request",
+    "href": "/cancel-request/"
+  },
+  {
+    "text": "Scrap Money",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Scrap Withdraw Request",
+    "href": "/list-scrap-money-withdraw-request/"
+  },
+  {
+    "text": "BWG Withdraw Request",
+    "href": "/list-bwg-scrap-money-withdraw-request/"
+  },
+  {
+    "text": "All Withdrawals",
+    "href": "/list-all-scrap-money-transactions/"
+  },
+  {
+    "text": "Bulk Waste Generator",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Client Requests",
+    "href": "/bwg-client-requests/"
+  },
+  {
+    "text": "BWG Clients",
+    "href": "/bwg-client/"
+  },
+  {
+    "text": "BWG Bag",
+    "href": "/bwg-waste-bags/"
+  },
+  {
+    "text": "BWG Orders",
+    "href": "javascript:;"
+  },
+  {
+    "text": "BWG Scrap Order",
+    "href": "/bwg-scrap-order/"
+  },
+  {
+    "text": "BWG DH Waste Order",
+    "href": "/bwg-bio-order/"
+  },
+  {
+    "text": "Scrap Stocks",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Stock/ Inventory",
+    "href": "/stock-inventory/"
+  },
+  {
+    "text": "Scrap Vendors",
+    "href": "/vendors/"
+  },
+  {
+    "text": "Stock Categories",
+    "href": "/stock-category/"
+  },
+  {
+    "text": "Add Stock",
+    "href": "/scrap-stock/"
+  },
+  {
+    "text": "Sale History",
+    "href": "/stock-sale/"
+  },
+  {
+    "text": "Service Locations",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Country",
+    "href": "/service-country/"
+  },
+  {
+    "text": "State",
+    "href": "/service-state/"
+  },
+  {
+    "text": "District",
+    "href": "/service-district/"
+  },
+  {
+    "text": "Scrap - Region",
+    "href": "/service-scrap-region/"
+  },
+  {
+    "text": "DH Waste - Localbody",
+    "href": "/service-localbody/"
+  },
+  {
+    "text": "Ward",
+    "href": "/service-ward/"
+  },
+  {
+    "text": "Scrap Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Scrap Products",
+    "href": "/scrap-type/"
+  },
+  {
+    "text": "Scrap Category",
+    "href": "/scrap-category/"
+  },
+  {
+    "text": "DH Waste Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "DH Waste Products",
+    "href": "/biowaste-type/"
+  },
+  {
+    "text": "DH Waste Category",
+    "href": "/biowaste-category/"
+  },
+  {
+    "text": "DH Waste Bags",
+    "href": "/waste-bags/"
+  },
+  {
+    "text": "Provider Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Provider Cash Collections",
+    "href": "/cash-in-hand-of-provider/"
+  },
+  {
+    "text": "Provider Roles",
+    "href": "/provider-roles/"
+  },
+  {
+    "text": "Pickup Vehicles",
+    "href": "/pickup-vehicles/"
+  },
+  {
+    "text": "Providers",
+    "href": "/providers/"
+  },
+  {
+    "text": "Provider Payslip",
+    "href": "/provider-payslips/"
+  },
+  {
+    "text": "Provider Team",
+    "href": "/provider-teams/"
+  },
+  {
+    "text": "Provider Track",
+    "href": "/all-providers-location-track/"
+  },
+  {
+    "text": "Employees",
+    "href": "/employee/"
+  },
+  {
+    "text": "Reports",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Aakri All Record",
+    "href": "/aakri-record/"
+  },
+  {
+    "text": "Aakri All Record Monthly",
+    "href": "/aakri-record-monthly/"
+  },
+  {
+    "text": "Provider Collections",
+    "href": "/provider-collections/"
+  },
+  {
+    "text": "Provider Settlement",
+    "href": "/provider-settlement-report/"
+  },
+  {
+    "text": "Move to Wallet Reports",
+    "href": "/wallet-recharge-report/"
+  },
+  {
+    "text": "Scrap Wallet Bill Report",
+    "href": "/wallet-bill-report/"
+  },
+  {
+    "text": "Scrap Report",
+    "href": "/scrap-report/"
+  },
+  {
+    "text": "Individual Scrap Report",
+    "href": "/individual-scrap-report/"
+  },
+  {
+    "text": "DH Waste/BWG Report",
+    "href": "/biowaste-report/"
+  },
+  {
+    "text": "Provider DH Waste Weight Report",
+    "href": "/combined-bioweight-report/"
+  },
+  {
+    "text": "DH Waste GST Report",
+    "href": "/biowaste-gst-report/"
+  },
+  {
+    "text": "Wallet Report",
+    "href": "/wallet-report/"
+  },
+  {
+    "text": "Cash Log Report",
+    "href": "/cash-log-report/"
+  },
+  {
+    "text": "Cash Flow Report",
+    "href": "/cash-flow-report/"
+  },
+  {
+    "text": "Bag Report",
+    "href": "/wastebag-report/"
+  },
+  {
+    "text": "Vehicle Report",
+    "href": "/vehicle-report/"
+  },
+  {
+    "text": "Consolidated Provider Report",
+    "href": "/consolidated-providers-report/"
+  },
+  {
+    "text": "Provider Track Report",
+    "href": "/provider-track-report/"
+  },
+  {
+    "text": "QR Report",
+    "href": "/qr-report/"
+  },
+  {
+    "text": "DH Waste PDF Report",
+    "href": "/biowaste_wardwise_report/"
+  },
+  {
+    "text": "Order Age Report",
+    "href": "/order-age-report/"
+  },
+  {
+    "text": "Whatsapp Chatbot",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Feedback",
+    "href": "/chatbot-feedback/"
+  },
+  {
+    "text": "Call Request",
+    "href": "/customer-enquiry/"
+  },
+  {
+    "text": "Web Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Waste Dispatch",
+    "href": "/waste-dispatch/"
+  },
+  {
+    "text": "App Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Dynamic Controls",
+    "href": "/dynamic-controls/"
+  },
+  {
+    "text": "Service Category",
+    "href": "/service-category/"
+  },
+  {
+    "text": "Order Cancel Reasons",
+    "href": "/cancel-reasons/"
+  },
+  {
+    "text": "Order Drop Reasons",
+    "href": "/drop-reasons/"
+  },
+  {
+    "text": "FAQs",
+    "href": "/frequently-asked-questions/"
+  },
+  {
+    "text": "Version Code",
+    "href": "/version-code/"
+  },
+  {
+    "text": "Green Point Offers",
+    "href": "/green-point-offers/"
+  },
+  {
+    "text": "Razorpay",
+    "href": "/razorpay-settings/"
+  },
+  {
+    "text": "Updations",
+    "href": "/get-updates/"
+  },
+  {
+    "text": "Location Accuracy",
+    "href": "/location-accuracy/"
+  },
+  {
+    "text": "Offers and Coupons",
+    "href": "/list-all-offers-and-coupons/"
+  },
+  {
+    "text": "Contact Number Settings",
+    "href": "/contact-number-settings/"
+  },
+  {
+    "text": "Green Marketplace",
+    "href": "/list-marketplace-products/"
+  },
+  {
+    "text": "Admin Settings",
+    "href": "javascript:;"
+  },
+  {
+    "text": "Admin Roles",
+    "href": "/admin-roles/"
+  },
+  {
+    "text": "Admin Users",
+    "href": "/admin-users/"
+  },
+  {
+    "text": "LSGD Users",
+    "href": "/lsgd-users/"
+  },
+  {
+    "text": "Yedhu Testerr",
+    "href": "#"
+  },
+  {
+    "text": "Logout",
+    "href": "/admin-logout/"
+  },
+  {
+    "text": "Today",
+    "href": "#"
+  },
+  {
+    "text": "Yesterday",
+    "href": "#"
+  },
+  {
+    "text": "Today",
+    "href": "#"
+  },
+  {
+    "text": "Yesterday",
+    "href": "#"
+  },
+  {
+    "text": "Today",
+    "href": "#"
+  },
+  {
+    "text": "Yesterday",
+    "href": "#"
+  },
+  {
+    "text": "Today",
+    "href": "#"
+  },
+  {
+    "text": "Yesterday",
+    "href": "#"
+  },
+  {
+    "text": "",
+    "href": "javaScript:;"
+  }
+]
