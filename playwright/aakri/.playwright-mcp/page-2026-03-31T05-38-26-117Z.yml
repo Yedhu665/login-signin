@@ -1,0 +1,484 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "logo icon" [ref=e5]
+      - img [ref=e7]
+      - generic [ref=e9] [cursor=pointer]: 
+    - list [ref=e11]:
+      - listitem [ref=e12]:
+        - link " Dashboard " [ref=e13] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e14]:
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Dashboard
+          - generic [ref=e18]: 
+        - text:  
+      - listitem [ref=e19]:
+        - link " Customer " [ref=e20] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e21]:
+            - generic [ref=e23]: 
+            - generic [ref=e24]: Customer
+          - generic [ref=e25]: 
+        - text:   
+      - listitem [ref=e26]:
+        - link " QR Customer " [ref=e27] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e28]:
+            - generic [ref=e30]: 
+            - generic [ref=e31]: QR Customer
+          - generic [ref=e32]: 
+        - text:  
+      - listitem [ref=e33]:
+        - link " Customer Orders " [ref=e34] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e35]:
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Customer Orders
+          - generic [ref=e39]: 
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link " Scrap" [ref=e42] [cursor=pointer]:
+              - /url: /scrap-order/
+              - generic [ref=e43]: 
+              - generic [ref=e44]: Scrap
+          - listitem [ref=e45]:
+            - link " DH Waste" [ref=e46] [cursor=pointer]:
+              - /url: /biowaste-order/
+              - generic [ref=e47]: 
+              - generic [ref=e48]: DH Waste
+          - listitem [ref=e49]:
+            - link " DH Orders Map" [ref=e50] [cursor=pointer]:
+              - /url: /order-map
+              - generic [ref=e51]: 
+              - generic [ref=e52]: DH Orders Map
+          - listitem [ref=e53]:
+            - link " Cancel Request" [ref=e54] [cursor=pointer]:
+              - /url: /cancel-request/
+              - generic [ref=e55]: 
+              - generic [ref=e56]: Cancel Request
+      - listitem [ref=e57]:
+        - link " Scrap Money " [ref=e58] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e59]:
+            - generic [ref=e61]: 
+            - generic [ref=e62]: Scrap Money
+          - generic [ref=e63]: 
+        - text:   
+      - listitem [ref=e64]:
+        - link " Bulk Waste Generator " [ref=e65] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e66]:
+            - generic [ref=e68]: 
+            - generic [ref=e69]: Bulk Waste Generator
+          - generic [ref=e70]: 
+        - text:   
+      - listitem [ref=e71]:
+        - link " BWG Orders " [ref=e72] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e73]:
+            - generic [ref=e75]: 
+            - generic [ref=e76]: BWG Orders
+          - generic [ref=e77]: 
+        - text:  
+      - listitem [ref=e78]:
+        - link " Scrap Stocks " [ref=e79] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e80]:
+            - generic [ref=e82]: 
+            - generic [ref=e83]: Scrap Stocks
+          - generic [ref=e84]: 
+        - text:     
+      - listitem [ref=e85]:
+        - link " Service Locations " [ref=e86] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e87]:
+            - generic [ref=e89]: 
+            - generic [ref=e90]: Service Locations
+          - generic [ref=e91]: 
+        - text:      
+      - listitem [ref=e92]:
+        - link " Scrap Settings " [ref=e93] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e94]:
+            - generic [ref=e96]: 
+            - generic [ref=e97]: Scrap Settings
+          - generic [ref=e98]: 
+        - text:  
+      - listitem [ref=e99]:
+        - link " DH Waste Settings " [ref=e100] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e101]:
+            - generic [ref=e103]: 
+            - generic [ref=e104]: DH Waste Settings
+          - generic [ref=e105]: 
+        - text:   
+      - listitem [ref=e106]:
+        - link "  Provider Settings " [ref=e107] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e108]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: 
+              - generic [ref=e112]: 
+            - generic [ref=e113]: Provider Settings
+          - generic [ref=e114]: 
+        - text:       
+      - listitem [ref=e115]:
+        - link " Employees" [ref=e116] [cursor=pointer]:
+          - /url: /employee/
+          - generic [ref=e118]: 
+          - generic [ref=e119]: Employees
+      - listitem [ref=e120]:
+        - link " Reports " [ref=e121] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e122]:
+            - generic [ref=e124]: 
+            - generic [ref=e125]: Reports
+          - generic [ref=e126]: 
+        - text:                     
+      - listitem [ref=e127]:
+        - link " Whatsapp Chatbot " [ref=e128] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e129]:
+            - generic [ref=e131]: 
+            - generic [ref=e132]: Whatsapp Chatbot
+          - generic [ref=e133]: 
+        - text:  
+      - listitem [ref=e134]:
+        - link " Web Settings " [ref=e135] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e136]:
+            - generic [ref=e138]: 
+            - generic [ref=e139]: Web Settings
+          - generic [ref=e140]: 
+        - text: 
+      - listitem [ref=e141]:
+        - link " App Settings " [ref=e142] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e143]:
+            - generic [ref=e145]: 
+            - generic [ref=e146]: App Settings
+          - generic [ref=e147]: 
+        - text:             
+      - listitem [ref=e148]:
+        - link " Admin Settings " [ref=e149] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e150]:
+            - generic [ref=e152]: 
+            - generic [ref=e153]: Admin Settings
+          - generic [ref=e154]: 
+        - text:   
+  - banner:
+    - navigation [ref=e156]:
+      - text: 
+      - generic [ref=e157]:
+        - link "Yedhu Testerr" [ref=e158] [cursor=pointer]:
+          - /url: "#"
+          - paragraph [ref=e160]: Yedhu Testerr
+        - text: 
+  - generic [ref=e163]:
+    - generic [ref=e164]:
+      - heading "Dashboard Overview" [level=2] [ref=e165]
+      - generic [ref=e166]:
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - paragraph [ref=e170]: Total Revenue
+            - heading "₹15,86,46,579.69" [level=3] [ref=e171]
+          - generic [ref=e173]: 
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Active Customers - Last 3 Months
+            - heading "24877" [level=3] [ref=e179]
+          - generic [ref=e181]: 
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: Total Waste Collected
+            - heading "58,91,367.04 Kg" [level=3] [ref=e187]
+          - generic [ref=e189]: 
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - paragraph [ref=e194]: Total CO₂ Saved
+            - heading "5,428.12 Tons" [level=3] [ref=e195]
+          - generic [ref=e196]:
+            - img
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - paragraph [ref=e202]: Total Revenue
+            - generic [ref=e204]: 
+          - table [ref=e206]:
+            - rowgroup [ref=e207]:
+              - row "Scrap ₹3,60,21,141.89" [ref=e208]:
+                - cell "Scrap" [ref=e209]
+                - cell "₹3,60,21,141.89" [ref=e210]
+              - row "Sanitary / Hazardous ₹12,26,25,437.81" [ref=e211]:
+                - cell "Sanitary / Hazardous" [ref=e212]
+                - cell "₹12,26,25,437.81" [ref=e213]
+              - row "RVSF ₹0" [ref=e214]:
+                - cell "RVSF" [ref=e215]
+                - cell "₹0" [ref=e216]
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - paragraph [ref=e221]: Active Customers - Last 3 Months
+            - generic [ref=e223]: 
+          - table [ref=e225]:
+            - rowgroup [ref=e226]:
+              - row "Ernakulam 15196" [ref=e227]:
+                - cell "Ernakulam" [ref=e228]
+                - cell "15196" [ref=e229]
+              - row "Thiruvananthapuram 3779" [ref=e230]:
+                - cell "Thiruvananthapuram" [ref=e231]
+                - cell "3779" [ref=e232]
+              - row "Kozhikode 2750" [ref=e233]:
+                - cell "Kozhikode" [ref=e234]
+                - cell "2750" [ref=e235]
+              - row "Thrissur 1474" [ref=e236]:
+                - cell "Thrissur" [ref=e237]
+                - cell "1474" [ref=e238]
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - paragraph [ref=e243]: Total Waste Collected
+            - generic [ref=e245]: 
+          - table [ref=e247]:
+            - rowgroup [ref=e248]:
+              - row "Scrap 16,79,969.52 Kg" [ref=e249]:
+                - cell "Scrap" [ref=e250]
+                - cell "16,79,969.52 Kg" [ref=e251]
+              - row "Sanitary / Hazardous 42,11,397.52 Kg" [ref=e252]:
+                - cell "Sanitary / Hazardous" [ref=e253]
+                - cell "42,11,397.52 Kg" [ref=e254]
+              - row "RVSF 0 Kg" [ref=e255]:
+                - cell "RVSF" [ref=e256]
+                - cell "0 Kg" [ref=e257]
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - paragraph [ref=e262]: Total CO₂ Saved
+            - generic [ref=e263]:
+              - img
+          - table [ref=e265]:
+            - rowgroup [ref=e266]:
+              - row "Tree Saved 12,256.46" [ref=e267]:
+                - cell "Tree Saved" [ref=e268]
+                - cell "12,256.46" [ref=e269]
+              - row "Landfill Diverted 4,707.99 tons" [ref=e270]:
+                - cell "Landfill Diverted" [ref=e271]
+                - cell "4,707.99 tons" [ref=e272]
+              - row "Water Saved 59,752.93 m³" [ref=e273]:
+                - cell "Water Saved" [ref=e274]
+                - cell "59,752.93 m³" [ref=e275]
+    - generic [ref=e277]:
+      - separator [ref=e278]
+      - generic [ref=e280]:
+        - heading "Revenue Analytics" [level=2] [ref=e282]
+        - generic [ref=e283]:
+          - combobox [ref=e285] [cursor=pointer]:
+            - option "Ernakulam"
+            - option "Alappuzha"
+            - option "Kozhikode"
+            - option "Kannur"
+            - option "Thiruvananthapuram"
+            - option "Thrissur"
+            - option "Kasaragod"
+            - option "Kollam"
+            - option "Kottayam"
+            - option "Malappuram"
+            - option "Palakkad"
+            - option "Pathanamthitta"
+          - button "Select Date" [ref=e287] [cursor=pointer]
+          - button "Reset" [ref=e288] [cursor=pointer]
+      - separator [ref=e289]
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - generic [ref=e293]:
+            - paragraph [ref=e294]: Revenue This Year
+            - heading [level=3]
+          - paragraph [ref=e296]: Scrap
+          - paragraph [ref=e297]: Sanitary / Hazardous
+          - paragraph [ref=e298]: RVSF
+        - generic [ref=e299]:
+          - generic [ref=e301]:
+            - paragraph [ref=e302]: Scrap Revenue This Year
+            - generic [ref=e303]:
+              - generic [ref=e304]:
+                - generic [ref=e305]: Positive Revenue
+                - heading [level=3]
+              - generic [ref=e306]:
+                - generic [ref=e307]: Negative Revenue
+                - heading [level=3]
+          - separator [ref=e308]
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - paragraph [ref=e311]: Scrap Weight
+              - heading [level=3]
+            - generic [ref=e312]:
+              - paragraph [ref=e313]: Scrap Order
+              - heading [level=3]
+          - paragraph [ref=e314]: Scrap
+        - generic [ref=e315]:
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Sanitary Revenue This Year
+            - heading [level=3]
+          - separator [ref=e320]
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - paragraph [ref=e323]: Sanitary Weight
+              - heading [level=3]
+            - generic [ref=e324]:
+              - paragraph [ref=e325]: Sanitary Order
+              - heading [level=3]
+          - paragraph [ref=e326]: Sanitary / Hazardous
+        - generic [ref=e327]:
+          - generic [ref=e329]:
+            - paragraph [ref=e330]: RVSF Revenue This Year
+            - heading [level=3]
+          - separator [ref=e332]
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - paragraph [ref=e335]: RVSF Weight
+              - heading [level=3]
+            - generic [ref=e336]:
+              - paragraph [ref=e337]: RVSF Order
+              - heading [level=3]
+          - paragraph [ref=e338]: RVSF
+      - generic [ref=e339]:
+        - heading "Revenue Trends" [level=3] [ref=e341]
+        - heading "Revenue Distribution" [level=3] [ref=e345]
+    - generic [ref=e348]:
+      - separator [ref=e349]
+      - generic [ref=e351]:
+        - heading "Customer Analytics" [level=2] [ref=e353]
+        - generic [ref=e354]:
+          - combobox [ref=e356] [cursor=pointer]:
+            - option "Ernakulam"
+            - option "Alappuzha"
+            - option "Kozhikode"
+            - option "Kannur"
+            - option "Thiruvananthapuram"
+            - option "Thrissur"
+            - option "Kasaragod"
+            - option "Kollam"
+            - option "Kottayam"
+            - option "Malappuram"
+            - option "Palakkad"
+            - option "Pathanamthitta"
+          - button "Select Date" [ref=e358] [cursor=pointer]
+          - button "Reset" [ref=e359] [cursor=pointer]
+      - separator [ref=e360]
+      - generic [ref=e361]:
+        - generic [ref=e363]:
+          - generic [ref=e364]:
+            - paragraph [ref=e365]: Total Customers
+            - heading "124138" [level=3] [ref=e366]
+          - generic [ref=e368]: 
+        - generic [ref=e370]:
+          - generic [ref=e371]:
+            - paragraph [ref=e372]: Active Customers
+            - heading [level=3]
+          - generic [ref=e374]: 
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - paragraph [ref=e378]: New Customers
+            - heading [level=3]
+          - generic [ref=e380]: 
+      - generic [ref=e381]:
+        - heading "Top Performing Customers Per Revenue" [level=3] [ref=e383]
+        - heading "Top Performing Customers Per Weight" [level=3] [ref=e385]
+      - heading "Customers Trends" [level=3] [ref=e387]
+    - generic [ref=e390]:
+      - separator [ref=e391]
+      - generic [ref=e393]:
+        - heading "Waste Management" [level=2] [ref=e395]
+        - generic [ref=e396]:
+          - combobox [ref=e398] [cursor=pointer]:
+            - option "Ernakulam"
+            - option "Alappuzha"
+            - option "Kozhikode"
+            - option "Kannur"
+            - option "Thiruvananthapuram"
+            - option "Thrissur"
+            - option "Kasaragod"
+            - option "Kollam"
+            - option "Kottayam"
+            - option "Malappuram"
+            - option "Palakkad"
+            - option "Pathanamthitta"
+          - button "Select Date" [ref=e400] [cursor=pointer]
+          - button "Reset" [ref=e401] [cursor=pointer]
+      - separator [ref=e402]
+      - generic [ref=e403]:
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - paragraph [ref=e407]: Total Waste
+            - heading [level=3]
+          - generic [ref=e409]: 
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - paragraph [ref=e413]: Scrap Waste
+            - heading [level=3]
+          - generic [ref=e415]: 
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - paragraph [ref=e419]: Sanitary Waste
+            - heading [level=3]
+          - generic [ref=e421]: 
+        - generic [ref=e423]:
+          - generic [ref=e424]:
+            - paragraph [ref=e425]: RVSF Waste
+            - heading [level=3]
+          - generic [ref=e427]: 
+      - generic [ref=e428]:
+        - heading "Top Performing District" [level=3] [ref=e430]
+        - heading "Top Performing Wards" [level=3] [ref=e432]
+      - generic [ref=e433]:
+        - heading "Bottom Performing District" [level=3] [ref=e435]
+        - heading "Bottom Performing Wards" [level=3] [ref=e437]
+      - generic [ref=e439]:
+        - heading "Revenue Breakdown" [level=3] [ref=e440]
+        - table [ref=e442]:
+          - rowgroup [ref=e443]:
+            - row "Category Revenue Orders Avg Value" [ref=e444]:
+              - columnheader "Category" [ref=e445]
+              - columnheader "Revenue" [ref=e446]
+              - columnheader "Orders" [ref=e447]
+              - columnheader "Avg Value" [ref=e448]
+          - rowgroup
+    - generic [ref=e449]:
+      - separator [ref=e450]
+      - generic [ref=e452]:
+        - heading "Environmental Impact" [level=2] [ref=e454]
+        - generic [ref=e455]:
+          - combobox [ref=e457] [cursor=pointer]:
+            - option "Ernakulam"
+            - option "Alappuzha"
+            - option "Kozhikode"
+            - option "Kannur"
+            - option "Thiruvananthapuram"
+            - option "Thrissur"
+            - option "Kasaragod"
+            - option "Kollam"
+            - option "Kottayam"
+            - option "Malappuram"
+            - option "Palakkad"
+            - option "Pathanamthitta"
+          - button "Select Date" [ref=e459] [cursor=pointer]
+          - button "Reset" [ref=e460] [cursor=pointer]
+      - separator [ref=e461]
+      - generic [ref=e462]:
+        - generic [ref=e464]:
+          - generic [ref=e465]:
+            - paragraph [ref=e466]: CO2 Savings
+            - heading "5,428.12 Tons" [level=3] [ref=e467]
+          - generic [ref=e469]: 
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - paragraph [ref=e473]: Landfill Diverted
+            - heading "4,707.99 Tons" [level=3] [ref=e474]
+          - generic [ref=e476]: 
+        - generic [ref=e478]:
+          - generic [ref=e479]:
+            - paragraph [ref=e480]: Trees Saved
+            - heading "12,256.46" [level=3] [ref=e481]
+          - generic [ref=e483]: 
+  - text: 
+  - contentinfo [ref=e484]:
+    - paragraph [ref=e485]: Copyright ©2026 . All right reserved and maintained by Aakri Impact Pvt Ltd.

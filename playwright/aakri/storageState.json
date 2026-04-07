@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "csrftoken",
+      "value": "cjTyuOAbHN6gfccl9BcFOkuw2S6JP0da",
+      "domain": "aakri.in",
+      "path": "/",
+      "expires": 1806559239.015623,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sessionid",
+      "value": "2im4skarn7wdgt3j1996wxljps1wbjee",
+      "domain": "aakri.in",
+      "path": "/",
+      "expires": 1806645639.015738,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

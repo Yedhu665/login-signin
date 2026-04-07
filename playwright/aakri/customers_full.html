@@ -1,0 +1,1839 @@
+<!DOCTYPE html><html lang="en"><head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+	<!-- Cross-Platform Icon and Theme Configuration -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/static/images/logos/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/static/images/logos/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/images/logos/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/static/images/logos/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/images/logos/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/static/images/logos/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/static/images/logos/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/static/images/logos/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/images/logos/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/static/images/logos/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/images/logos/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/static/images/logos/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/images/logos/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Bootstrap CSS -->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="/static/css/app.css" rel="stylesheet">
+	<link href="/static/css/icons.css" rel="stylesheet">
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<!-- Datatables for Pagnation -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/datetime-moment.js"></script>
+
+	<!-- JSZip for Excel export -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+	<!-- Buttons for Excel export -->
+	<script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
+
+	<!-- Datepicker  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Jquery Calender -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Select2 JS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+	
+	
+
+	<title>Aakri - List Customers</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 
+			<div id="snow-container"></div>
+		 -->
+
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<!-- <img src="/static/images/logos/logo-icon.png" class="logo-icon" alt="logo icon"> -->
+				<img src="/static/images/logos/aakri-logoapp3.png" class="logo-icon" alt="logo icon">
+				<div class="logo-text"><img src="/static/images/logos/AakriLogo.png"></div>
+				<!-- <div class="logo-text"><img src="/static/images/logos/LOGO.png"></div> -->
+				<div class="toggle-icon ms-auto"><i class="bx bx-arrow-back"></i></div>
+			</div>
+			<div class="sidebar-menu d-flex align-items-start justify-content-between">
+				<ul class="metismenu" id="menu">
+					
+						<li data-id="menu-1" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+									<div class="menu-title">Dashboard&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/analytics-dashboard/">
+											<i class="fas fa-line-chart"></i>
+											<div class="menu-title">Analytics</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/operations-dashboard/">
+										<i class="fas fa-bar-chart"></i>
+										<div class="menu-title">Operations</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-2" class="w-100 mm-active mm-show">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fa fa-user-check"></i></div>
+									<div class="menu-title">Customer&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li class="mm-active">
+										<a href="/customers/" class="active">
+											<div class="parent-icon"><i class="bx bx-user"></i></div>
+											<div class="menu-title">Customers</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/submitted-customer-survey/">
+										<i class="fas fa-poll"></i>
+										<div class="menu-title">Customer Survey</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/submitted-drive-survey/">
+										<i class="fas fa-list-alt"></i>
+										<div class="menu-title">Drive Survey</div>
+									</a>
+								</li>
+								
+								
+							</ul>
+						</li>
+						<!-- 
+							<li data-id="menu-2" class="w-100">
+								<a href="/customers/">
+									<div class="parent-icon"><i class='bx bx-user'></i></div>
+									<div class="menu-title">Customers</div>
+								</a>
+							</li>
+						 -->
+					
+					
+						<li data-id="menu-3" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fa fa-qrcode"></i></div>
+									<div class="menu-title">QR Customer&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/qr-customers/">
+										<i class="fa fa-id-card"></i>
+										<div class="menu-title">QR Customers</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/service-zones/">
+										<i class="fa fa-map-signs" aria-hidden="true"></i>
+										<div class="menu-title">Service Zones</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-4" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="bx bx-cart"></i></div>
+									<div class="menu-title">Customer Orders&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/scrap-order/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">Scrap</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/biowaste-order/">
+										<i class="fas fa-biohazard"></i>
+										<div class="menu-title">DH Waste</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/order-map">
+										<i class="fas fa-biohazard"></i>
+										<div class="menu-title">DH Orders Map</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/cancel-request/">
+											<i class="fa fa-times-circle"></i>
+											<div class="menu-title">Cancel Request</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-5" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fas fa-coins"></i></div>
+									<div class="menu-title">Scrap Money&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/list-scrap-money-withdraw-request/">
+											<i class="fas fa-envelope"></i>
+											<div class="menu-title">Scrap Withdraw Request</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/list-bwg-scrap-money-withdraw-request/">
+											<i class="fas fa-inbox"></i>
+											<div class="menu-title">BWG Withdraw Request</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/list-all-scrap-money-transactions/">
+											<i class="fas fa-list-alt"></i>
+											<div class="menu-title">All Withdrawals</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-6" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-dumpster"></i></div>
+									<div class="menu-title">Bulk Waste Generator</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/bwg-client-requests/">
+										<i class="fas fa-file-signature"></i>
+										<div class="menu-title">Client Requests</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/bwg-client/">
+										<i class="bx bx-group"></i>
+										<div class="menu-title">BWG Clients</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/bwg-waste-bags/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">BWG Bag</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+						
+						
+						<li data-id="menu-7" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-boxes fa-xs"></i></div>
+									<div class="menu-title">BWG Orders&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/bwg-scrap-order/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">BWG Scrap Order</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/bwg-bio-order/">
+											<i class="fas fa-biohazard"></i>
+											<div class="menu-title">BWG DH Waste Order</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-8" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center">
+									<div class="parent-icon"><i class="fas fa-coins"></i></div>
+									<div class="menu-title">Scrap Stocks&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+								<li>
+									<a href="/stock-inventory/">
+										<i class="fas fa-anchor"></i>
+										<div class="menu-title">Stock/ Inventory</div>
+									</a>
+								</li>
+								
+								
+									<li>
+										<a href="/vendors/">
+											<i class="fas fa-envelope"></i>
+											<div class="menu-title">Scrap Vendors</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/stock-category/">
+										<i class="fas fa-air-freshener"></i>
+										<div class="menu-title">Stock Categories</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/scrap-stock/">
+										<i class="fas fa-list-alt"></i>
+										<div class="menu-title">Add Stock</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/stock-sale/">
+										<i class="fas fa-history"></i>
+										<div class="menu-title">Sale History</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-9" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-globe fa-xs"></i></div>
+									<div class="menu-title">Service Locations&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/service-country/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Country</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-state/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">State</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-district/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">District</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-scrap-region/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Scrap - Region</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-localbody/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">DH Waste - Localbody</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-ward/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Ward</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+						<li data-id="menu-10" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-wrench fa-xs"></i></div>
+									<div class="menu-title">Scrap Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/scrap-type/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">Scrap Products</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/scrap-category/">
+											<i class="fas fa-recycle"></i>
+											<div class="menu-title">Scrap Category</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+						
+					
+						<li data-id="menu-11" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-gear fa-xs"></i></div>
+									<div class="menu-title">DH Waste Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/biowaste-type/">
+											<i class="fas fa-box"></i>
+											<div class="menu-title">DH Waste Products</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-category/">
+											<i class="fas fa-recycle"></i>
+											<div class="menu-title">DH Waste Category</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/waste-bags/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">DH Waste Bags</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+							
+					
+						<li data-id="menu-12" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon">
+										<span class="fa-stack" style="font-size: 5px;">
+											<i class="fas fa-truck fa-stack-2x"></i>
+											<i class="fas fa-cogs fa-stack-1x" style="color: white;"></i>
+										</span>
+									</div>
+									<div class="menu-title">Provider Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/cash-in-hand-of-provider/">
+											<i class="fas fa fa-inr"></i>
+											<div class="menu-title">Provider Cash Collections</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-roles/">
+											<i class="fas fa-user-shield"></i>
+											<div class="menu-title">Provider Roles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/pickup-vehicles/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Pickup Vehicles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/providers/">
+											<i class="fas fa-users"></i>
+											<div class="menu-title">Providers</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-payslips/">
+											<i class="fa-solid fa-receipt"></i>
+											<div class="menu-title">Provider Payslip</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-teams/">
+											<i class="fa fa-user-plus"></i>
+											<div class="menu-title">Provider Team</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/all-providers-location-track/">
+											<i class="fas fa-map-marker"></i>
+											<div class="menu-title">Provider Track</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>	
+					
+					
+							
+							<li data-id="menu-13" class="w-100">
+								<a href="/employee/">
+									<div class="parent-icon"><i class="bx bx-group"></i></div>
+									<div class="menu-title">Employees</div>
+								</a>
+							</li>
+						
+					
+					
+						<li data-id="menu-14" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="far fa-clipboard fa-sm"></i></div>
+									<div class="menu-title">Reports&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/aakri-record/">
+											<i class="fa fa-file"></i>
+											<div class="menu-title">Aakri All Record</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/aakri-record-monthly/">
+											<i class="fa fa-file-text"></i>
+											<div class="menu-title">Aakri All Record Monthly</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-collections/">
+											<i class="fa fa-money-bill"></i>
+											<div class="menu-title">Provider Collections</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-settlement-report/">
+											<i class="fa fa-hand-holding-usd"></i>
+											<div class="menu-title">Provider Settlement</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-recharge-report/">
+											<i class="fa fa-file-invoice-dollar"></i>
+											<div class="menu-title">Move to Wallet Reports</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-bill-report/">
+											<i class="fa fa-money-check"></i>
+											<div class="menu-title">Scrap Wallet Bill Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/scrap-report/">
+											<i class="fa fa-box"></i>
+											<div class="menu-title">Scrap Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/individual-scrap-report/">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<div class="menu-title">Individual Scrap Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-report/">
+											<i class="fas fa-biohazard"></i>
+											<div class="menu-title">DH Waste/BWG Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/combined-bioweight-report/">
+											<i class="fas fa-balance-scale"></i>
+											<div class="menu-title">Provider DH Waste Weight Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste-gst-report/">
+											<i class="fa fa-file-text"></i>
+											<div class="menu-title">DH Waste GST Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wallet-report/">
+											<i class="fas fa-wallet"></i>
+											<div class="menu-title">Wallet Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cash-log-report/">
+											<i class="fas fa-book"></i>
+											<div class="menu-title">Cash Log Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cash-flow-report/">
+											<i class="fas fa-cash-register"></i>
+											<div class="menu-title">Cash Flow Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/wastebag-report/">
+											<i class="fas fa-shopping-bag"></i>
+											<div class="menu-title">Bag Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/vehicle-report/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Vehicle Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/consolidated-providers-report/">
+											<i class="fas fa-clock"></i>
+											<div class="menu-title">Consolidated Provider Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/provider-track-report/">
+											<i class="fa fa-history"></i>
+											<div class="menu-title">Provider Track Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/qr-report/">
+											<i class="fa-solid fa-qrcode"></i>
+											<div class="menu-title">QR Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/biowaste_wardwise_report/">
+											<i class="fa-solid fa-file-pdf"></i>
+											<div class="menu-title">DH Waste PDF Report</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/order-age-report/">
+											<i class="fa fa-hourglass-half"></i>
+											<div class="menu-title">Order Age Report</div>
+										</a>
+									</li>
+								
+								
+							</ul>
+						</li>
+					
+										
+						<li data-id="menu-15" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="bx bxl-whatsapp" style="font-size: 17px;"></i></div>
+									<div class="menu-title">Whatsapp Chatbot&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/chatbot-feedback/">
+											<i class="fas fa-list-alt"></i>
+											<div class="menu-title">Feedback</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/customer-enquiry/">
+											<i class="fas fa-question-circle"></i>
+											<div class="menu-title">Call Request</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+										
+										
+						<li data-id="menu-16" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-globe fa-sm"></i></div>
+									<div class="menu-title">Web Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/waste-dispatch/">
+											<i class="fa fa-industry"></i>
+											<div class="menu-title">Waste Dispatch</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>
+										
+										
+						<li data-id="menu-17" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fas fa-mobile-alt fa-sm"></i></div>
+									<div class="menu-title">App Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/dynamic-controls/">
+											<i class="fa fa-sliders" aria-hidden="true"></i>
+											<div class="menu-title">Dynamic Controls</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/service-category/">
+											<i class="fas fa-truck"></i>
+											<div class="menu-title">Service Category</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/cancel-reasons/">
+											<i class="fas fa-comment-dots"></i>
+											<div class="menu-title">Order Cancel Reasons</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/drop-reasons/">
+											<i class="fas fa-comments"></i>
+											<div class="menu-title">Order Drop Reasons</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/frequently-asked-questions/">
+											<i class="fas fa-question"></i>
+											<div class="menu-title">FAQs</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/version-code/">
+											<i class="fas fa-phone"></i>
+											<div class="menu-title">Version Code</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/green-point-offers/">
+											<i class="fas fa-leaf"></i>
+											<div class="menu-title">Green Point Offers</div>
+										</a>
+									</li>
+								
+								
+								<li>
+									<a href="/razorpay-settings/">
+										<i class="fas fa-money-bill-wave"></i>
+										<div class="menu-title">Razorpay</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/get-updates/">
+										<i class="fas fa-redo"></i>
+										<div class="menu-title">Updations</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/location-accuracy/">
+										<i class="fas fa-location-arrow"></i>
+										<div class="menu-title">Location Accuracy</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/list-all-offers-and-coupons/">
+										<i class="fas fa-gift"></i>
+										<div class="menu-title">Offers and Coupons</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/contact-number-settings/">
+										<i class="fas fa-mobile-alt"></i>
+										<div class="menu-title">Contact Number Settings</div>
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="/list-marketplace-products/">
+										<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+										<div class="menu-title">Green Marketplace</div>
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+							
+					
+						<li data-id="menu-18" class="w-100">
+							<a href="javascript:;" class="has-arrow d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="parent-icon"><i class="fa fa-user-circle fa-sm"></i></div>
+									<div class="menu-title">Admin Settings&nbsp;&nbsp;&nbsp;</div>
+								</div>
+								<i class="fas fa-chevron-right arrow-indicator"></i>
+							</a>
+							<ul class="w-100" style="display: none;">
+								
+									<li>
+										<a href="/admin-roles/">
+											<i class="fa fa-shield"></i>
+											<div class="menu-title">Admin Roles</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/admin-users/">
+											<i class="fas fa-user-tie"></i>
+											<div class="menu-title">Admin Users</div>
+										</a>
+									</li>
+								
+								
+									<li>
+										<a href="/lsgd-users/">
+											<i class="fas fa-user-tie"></i>
+											<div class="menu-title">LSGD Users</div>
+										</a>
+									</li>
+								
+							</ul>
+						</li>	
+											
+				</ul>
+			</div>
+		</div>
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class="bx bx-menu"></i></div>
+					<div class="user-box dropdown px-3 ms-auto">
+						<a class="nav-link" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<div class="user-info">
+								<p class="user-name mb-0" style="color: white;">Yedhu Testerr</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li>
+								<a class="dropdown-item" href="/admin-logout/" id="logout-btn">
+									<i class="fas fa-sign-out-alt"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="page-wrapper">
+			<div class="page-content">
+                
+<style>
+    .dataTables_processing {
+        display: none !important;
+    }
+
+    .action-btn i {
+        cursor: pointer;
+    }
+
+    table, h1 {
+        cursor: default;
+        color: white;
+    }
+    
+    label {
+        font-size: medium;
+        font-weight: 500;
+        color: white;
+    }
+
+    .dataTables_length label select {
+        color: white !important;
+    }
+
+    .dataTables_length label select option {
+        color: black !important;
+        background-color: white !important;
+    }
+
+    .dataTables_info {
+        color: white !important;
+    }
+    
+    .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+        color: white !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        color: white !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: white !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.next {
+        color: white !important;
+    }
+
+    .table-bordered {
+        border-collapse: collapse;
+    }
+
+    .table-bordered th, 
+    .table-bordered td {
+        border: 1px solid #ddd !important;
+    }
+    
+    /* Scrollbar styling */
+    .table-responsive::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    .table-responsive::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 8px;
+    }
+
+    /* Firefox */
+    .table-responsive {
+        scrollbar-width: thick;
+        scrollbar-color: #888 #111827;
+    }
+</style>
+
+<div class="inner-wrapper">
+    <div class="row">
+        <h1>Customers</h1>
+        <!-- Message -->
+        
+    </div>
+    <div class="row">
+        <!-- Filter Based on District -->
+        <div class="col-md-2">
+            <div class=" mt-2">
+                <label for="date-range">District</label>
+                <select id="districtFilter" class="form-select"></select>
+            </div>
+        </div>
+        <!-- Filter Based on Customer Join Date -->
+        <div class="col-md-10">
+            <div class="d-md-flex gap-3 mt-2">
+                <div class="form-group col-md-4">
+                    <label for="date-range">Start Date</label>
+                    <input type="date" class="form-control" id="start-date" placeholder="Select date range" onclick="this.showPicker()" max="2026-04-02">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="date-range">End Date</label>
+                    <input type="date" class="form-control" id="end-date" placeholder="Select date range" onclick="this.showPicker()" max="2026-04-02">
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <button class="btn btn-primary" id="submit-dates">Filter</button>&nbsp;&nbsp;
+                    <button class="btn btn-primary" id="clear-dates">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search for a Customer Based on Phone Number, Name or Order Code -->
+    <div class="row"> 
+        <div class="col-md-8">
+            <div class="d-md-flex gap-3 mt-4">
+                <div class="form-group col-md-2">
+                    <label for="">Search By</label>
+                    <select id="search_by" class="form-select">
+                        <option value="phone_number">Phone</option>
+                        <option value="name">Name</option>
+                        <option value="order_code">Order Code</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control mt-4" name="user-search-data" id="user-search-data">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary mt-4" id="user-search" target="_blank">Search</button>&nbsp;&nbsp;
+                    <button class="btn btn-secondary mt-4 px-3" id="clear-search">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <br>
+            
+            <form action="/download-customer-agreement/" method="POST" target="_blank">
+                <input type="hidden" name="csrfmiddlewaretoken" value="Pc12wtUute5UA7nfHyddxd7XdmLrhdMDjomxDYJoZwBUMhTMd5Bnl6WghprdjrLO">
+                <input type="text" name="agreement_district" id="agreement_district" hidden="">
+                <input type="date" name="agreement_start_date" id="agreement_start_date" hidden="">
+                <input type="date" name="agreement_end_date" id="agreement_end_date" hidden="">
+                <button type="submit" class="btn btn-danger float-end mt-4" id="download-agreement">
+                    Download Agreement
+                </button>
+            </form>
+            
+        </div>
+    </div>
+    <!-- Customer Details Table -->
+    <div class="row">
+        <div class="mb-3 mt-3 text-left" id="table-buttons"></div>
+        <div class="table-responsive">
+            <div id="customer_table_wrapper" class="dataTables_wrapper no-footer"><div class="row"><div class="col-md-5 d-flex align-items-center gap-2"><div class="dt-buttons"><div class="dt-buttons"> <button class="dt-button buttons-csv buttons-html5 btn btn-success" tabindex="0" aria-controls="customer_table" type="button"><span>To Excel</span></button> <button class="dt-button btn btn-primary" tabindex="0" aria-controls="customer_table" type="button"><span>Notification</span></button> </div></div><div class="dt-length"><div class="dataTables_length" id="customer_table_length"><label>Show <select name="customer_table_length" aria-controls="customer_table" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="-1">All</option></select> entries</label></div></div></div><div class="col-md-7"><div id="customer_table_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="customer_table"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped table-responsive mt-2 mb-3 dataTable no-footer" id="customer_table" aria-describedby="customer_table_info">
+                <thead>
+                    <tr><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 35.7969px;">Sl No.</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 44.3281px;">Arrival</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 35px;">Name</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 37.3438px;">Phone</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 35.7812px;">Email</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 45.0938px;">District</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 53.6562px;">Platform</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 57.1719px;">Join Date</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 67.2656px;">Last Order</th><th class="text-center align-middle sorting" tabindex="0" aria-controls="customer_table" rowspan="1" colspan="1" style="width: 37.3594px;">Status</th><th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 45.125px;">Actions</th><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 79.7188px;">Scrap Money</th><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 38.8906px;">Wallet</th><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 77.9062px;">Green Points</th><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 81.2656px;">Scrap Orders</th><th class="text-center align-middle sorting_disabled" rowspan="1" colspan="1" style="width: 107.078px;">DH Waste Orders</th></tr></thead>
+                <tbody class="text-center">
+                </tbody>
+            </table><div id="customer_table_processing" class="dataTables_processing" role="status" style="display: block;"><div><div></div><div></div><div></div><div></div></div></div></div></div><div class="row"><div class="col-md-5"><div class="dataTables_info" id="customer_table_info" role="status" aria-live="polite"></div></div><div class="col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="customer_table_paginate"></div></div></div></div>
+        </div>
+    </div>
+    <div class="modal fade" id="notification_modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="px-4 pt-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h3>Send Notification</h3>
+                        </div>
+                        <div>
+                            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-black">×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <form action="/send-customer-notification/" method="POST" id="notification-send-form" validate=""> 
+                        <input type="hidden" name="csrfmiddlewaretoken" value="Pc12wtUute5UA7nfHyddxd7XdmLrhdMDjomxDYJoZwBUMhTMd5Bnl6WghprdjrLO">
+                        <div>
+                            <label for="noti_phone_number" class="text-black">Phone Number</label>
+                            <input type="text" class="form-control mt-1" name="noti_phone_number" id="noti_phone_number" required="">
+                        </div>
+                        <div class="mt-3">
+                            <label for="noti_title" class="text-black">Title</label>
+                            <textarea name="noti_title" id="noti_title" class="form-control mt-1" required=""></textarea>
+                        </div>
+                        <div class="mt-3">
+                            <label for="noti_message" class="text-black">Message</label>
+                            <textarea name="noti_message" id="noti_message" class="form-control mt-1" required=""></textarea>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-success" type="submit" id="submit-btn">Submit</button>&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Date settings
+    document.addEventListener('DOMContentLoaded', function () {
+        const startRange = document.getElementById('start-date');
+        const endRange = document.getElementById('end-date');
+
+        // Get today's date in the format YYYY-MM-DD
+        const today = new Date().toISOString().split('T')[0];
+
+        // Set the maximum selectable date to today
+        startRange.max = today;
+        endRange.max = today;
+
+        startRange.addEventListener('change', function () {
+            // Set the minimum end date to the selected start date
+            if (startRange.value) {
+                endRange.min = startRange.value; // Set the minimum value for end date
+            } else {
+                endRange.min = ''; // Reset min if no start date is selected
+            }
+        });
+
+        endRange.addEventListener('change', function () {
+            // If start date is selected, then set the maximum start date to the selected end date
+            if (startRange.value) {
+                if (endRange.value) {
+                    startRange.max = endRange.value; // Set the maximum value for start date
+                } else {
+                    startRange.max = ''; // Reset max if no end date is selected
+                }
+            } else {
+                alert('Please select a start date first');
+                endRange.value = ''; // Reset end date if no start date is selected
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        const showColumn = (
+            '' === 'True' || 
+            '' === 'True'
+        );
+
+        var addButton = [];
+
+        addButton.push({
+            extend: 'csvHtml5',
+            text: 'To Excel',
+            title: 'Customers Data',
+            className: 'btn btn-success',
+            exportOptions: {
+                columns: [0, 1, 2, 3, 4, 5, 6, 7, 8] // Set required columns
+            }
+        });
+
+        if ("True" === "True") {
+            addButton.push({
+                text: 'Notification',
+                className: 'btn btn-primary',
+                action: function (e, dt, node, config) {
+                    $('#notification_modal').modal('show'); // Trigger Bootstrap modal
+                }
+            });
+        }
+
+        // Populate customer details table
+        var table = $('#customer_table').DataTable({
+            'processing': true,
+            'serverSide': true,
+            'ajax': {
+                'url': '/customers/',
+                'type': 'GET',
+                'data': function(d) {
+                    d.district = $('#districtFilter').val();
+                    d.search_option = $('#search_by').val();
+                    d.user_data = $('#user-search-data').val();
+                    d.start_date = $('#start-date').val();
+                    d.end_date = $('#end-date').val();
+                },
+                'dataSrc': function(json) {
+                    var districtFilter = $('#districtFilter');
+                    districtFilter.empty();
+                    districtFilter.append('<option value="">All</option>');
+
+                    $.each(json.districts, function(index, district) {
+                        if (district.id == json.district_id){
+                            districtFilter.append('<option value="' + district.id + '" selected>' + district.district_name + '</option>');
+                        } else{
+                            districtFilter.append('<option value="' + district.id + '">' + district.district_name + '</option>');
+                        }
+                    });
+                    return json.data;
+                }
+            },
+            'columns': [
+                // First column should be SlNo 
+                {
+                    'data': null,
+                    'render': function (data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1; 
+                    },
+                    'orderable': false,
+                    'className': 'text-center align-middle'
+                },
+                {
+                    'data': 'last_order',
+                    'render': function(data, type, row) {
+                        if (!data) {
+                            return "<span class='text-danger'>New</span>"; // or return 'N/A', '', or any placeholder you prefer
+                        }
+                        return '-';
+                    },
+                    'type': 'date',
+                    'className': 'text-center align-middle'
+                },
+                { 'data': 'full_name', 'className': 'text-center align-middle' },
+                { 'data': 'phone_number', 'className': 'text-center align-middle' },
+                { 'data': 'email', 'className': 'text-center align-middle' },
+                { 'data': 'district', 'className': 'text-center align-middle' },
+                { 'data': 'platform', 'className': 'text-center align-middle' },
+                // Set date joined as a date instead of string for sort function
+                {
+                    'data': 'date_joined',
+                    'render': function(data, type, row) {
+                        var date = moment(data);
+                        return date.format('DD-MMM-YYYY');
+                    },
+                    'type': 'date', 
+                    'className': 'text-center align-middle'
+                },
+                // Set date joined as a date instead of string for sort function
+                {
+                    'data': 'last_order',
+                    'render': function(data, type, row) {
+                        if (!data) {
+                            return '-'; // or return 'N/A', '', or any placeholder you prefer
+                        }
+                        var date = moment(data);
+                        return date.isValid() ? date.format('DD-MMM-YYYY') : '-';
+                    },
+                    'type': 'date',
+                    'className': 'text-center align-middle'
+                },
+                { 'data': 'active_status', 'className': 'text-center align-middle' },
+                // Set link for view, edit, deactive and delete customer 
+                {
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        action = `
+                                    <div class='action-btn mb-2'>
+                                `;
+                        if ('True' == 'True') {
+                            action += `
+                                        <a href="/view-customer-details/${data}/" target="_blank"><i class="fas fa-eye" title="View"></i></a>&nbsp;
+                                    `
+                        }
+                        if ('True' == 'True') {
+                            action += `
+                                        <a href="/edit-customer-details/${data}/" target="_blank"><i class="fas fa-pencil" title="Edit"></i></a>
+                                    `
+                        }
+                        action += `
+                                    </div>
+                                    <div class='action-btn mb-2'>
+                                `;
+                        
+                        if ('True' == 'True') {
+                            if (row.active_status === 'Active') {
+                                action += `<a href="/toggle-customer-status/${data}/" class="toggle-customer-status"><i class="fas fa-ban" title="Inactive"></i></a>&nbsp;`;
+                            } else {
+                                action += `<a href="/toggle-customer-status/${data}/" class="toggle-customer-status"><i class="fas fa-check" title="Active"></i></a>&nbsp;`;
+                            }
+                        }
+
+                        if ('True' == 'True') {
+                            action += `
+                                        <a href="/delete-customer/${data}/" class="delete-customer"><i class="fas fa-trash-alt" title="Delete"></i></a>
+                                    `;
+                        }
+
+                        if ('True' == 'True') {
+                            action += `
+                                        </div>
+                                        <div class='action-btn mb-2'>
+                                            <a href="/customer-terms-and-conditions/${data}/" target="_blank"><i class="fas fa-file-contract" title="t&c"></i></a>
+                                        </div>
+                                    `;
+                        }else{
+                            action += `
+                                        </div>
+                                    `;
+                        }
+                        return action;
+                    },
+                    'orderable': false,
+                },
+                // Set link for Scrap money transaction details
+                {
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        var url = '/get-scrap-money-transactions/' + data + '/';
+                        return '<a href="' + url + '" target="_blank"><i class="fas fa-dollar-sign" title="Scrap Money Transactions"></i></a>';
+                    },
+                    'orderable': false, 
+                    'className': 'text-center align-middle'
+                },
+                // Set link for wallet transaction details
+                {
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        var url = '/get-wallet-transactions/' + data + '/';
+                        return '<a href="' + url + '" target="_blank"><i class="fas fa-wallet" title="Wallet Transactions"></i></a>';
+                    },
+                    'orderable': false, 
+                    'className': 'text-center align-middle'
+                },
+                // Set link for loyalty point transaction details
+                {
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        var url = '/get-loyalty-point-transactions/' + data + '/';
+                        return '<a href="' + url + '" target="_blank"><i class="fas fa-gem" title="Loyalty Point Transactions"></i></a>';
+                    },
+                    'orderable': false, 
+                    'className': 'text-center align-middle'
+                },
+                // Set link for customer scrap order details
+                { 
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        var url = '/unique-customer-scrap-order/' + data + '/';
+                        return '<a href="' + url + '" target="_blank"><i class="fa fa-box" title="Scrap Orders"></i></a>';
+                    },
+                    'orderable': false, 
+                    'className': 'text-center align-middle'
+                },
+                // Set link for customer bio waste order details
+                { 
+                    'data': 'id',
+                    'render': function(data, type, row) {
+                        var url = '/unique-customer-biowaste-order/' + data + '/';
+                        return '<a href="' + url + '" target="_blank"><i class="fa fa-biohazard"  title="Biowaste Orders"></i></a>';
+                    },
+                    'orderable': false, 
+                    'className': 'text-center align-middle'
+                }
+            ],
+            'order': [],
+            // Hide table columns 
+            "columnDefs": [
+                {
+                    // Hide action column from table if all button in the columns are hidden.
+                    "targets": 10, // Target column.
+                    "visible": 'True' == 'True' || 'True' == 'True' || 'True' == 'True' || 'True' == 'True' || 'True' == 'True'
+                },
+                {
+                    // Hide scrap money column.
+                    "targets": 11, // Target column.
+                    "visible": 'True' == 'True' 
+                },
+                {
+                    // Hide wallet column.
+                    "targets": 12, // Target column.
+                    "visible": 'True' == 'True' 
+                },
+                {
+                    // Hide loyalty point column.
+                    "targets": 13, // Target column.
+                    "visible": 'True' == 'True' 
+                },
+                {
+                    // Hide scrap order column.
+                    "targets": 14, // Target column.
+                    "visible": 'True' == 'True' 
+                },
+                {
+                    // Hide bio order column.
+                    "targets": 15, // Target column.
+                    "visible": 'True' == 'True' 
+                }
+            ],
+            // Setup excel button, row info and search field
+            'dom': '<"row"' +
+                        '<"col-md-5 d-flex align-items-center gap-2"' +
+                        '<"dt-buttons"B>' +  // Excel, custom notification
+                        '<"dt-length"l>' +   // Show entries
+                        '>' +
+                        '<"col-md-7"f>' +      // Search
+                    '>' +
+                    '<"row"<"col-sm-12"tr>>' +
+                    '<"row"<"col-md-5"i><"col-md-7"p>>',  // Pagination
+            
+            // Excel settings 
+            'buttons': addButton,
+            'lengthMenu': [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']]
+        });
+
+        // Redraw table when district filters change
+        $('#districtFilter').change(function() {
+            table.ajax.reload();
+        });
+
+        // Redraw table when user search change
+        $('#user-search').click(function() {
+            table.ajax.reload();
+        });
+
+        $('#user-search-data').on('keypress', function(e) {
+            if (e.which == 13 || e.keyCode == 13) { 
+                e.preventDefault(); 
+                table.ajax.reload();
+            }
+        });
+
+        // User search filter settings 
+        $('#search_by').on('change', function() {
+            var selectedFilter = $(this).val();
+            $('#user-search-data').val('').trigger('change'); // Clear the input field whenever the filter changes
+
+            // Allow only specific input based on the selected filter
+            $('#user-search-data').off('input paste').on('input paste', function(e) {
+                var inputValue = $(this).val();
+                if (selectedFilter === 'phone_number') {
+                    // Allow only numbers if option is phone number
+                    let cleaned = inputValue.replace(/[^0-9+]/g, '');
+
+                    // Format: keep +91 if present, max 10 digits
+                    if (cleaned.startsWith('+91')) {
+                        cleaned = '+91' + cleaned.substring(3).replace(/[^0-9]/g, '').substring(0, 10);
+                    } else {
+                        cleaned = cleaned.replace(/[^0-9]/g, '').substring(0, 10);
+                    }
+
+                    // Always set cleaned input
+                    $(this).val(cleaned);
+
+                    // Extract just the number part for validation
+                    let numberPart = cleaned.startsWith('+91') ? cleaned.substring(3) : cleaned;
+
+                    // Validate only when user has entered 10 digits
+                    if (numberPart.length === 10) {
+                        const startsWithValidDigit = /^[6-9]/.test(numberPart);
+                        const isNotRepeatedDigits = !/^(\d)\1{9}$/.test(numberPart);
+
+                        if (!(startsWithValidDigit && isNotRepeatedDigits)) {
+                            // Invalid — clear or show warning
+                            $(this).val('');
+                            alert('Enter a valid 10-digit mobile number starting with 6, 7, 8, or 9 and not all same digits.');
+                        }
+                    }
+                } else if (selectedFilter === 'name') {
+                    // Allow only letters and spaces if option is name
+                    $(this).val(inputValue.replace(/[^a-zA-Z\s]/g, '')).trigger('change');
+                } else if (selectedFilter === 'order_code') {
+                    // Allow both letters and numbers, but no spaces id order code
+                    $(this).val(inputValue.replace(/[^a-zA-Z0-9]/g, '')).trigger('change');
+                }
+            });
+
+        });
+
+        // Initial trigger
+        $('#search_by').trigger('change');
+
+        // Redraw table when user search is cleared 
+        $('#clear-search').click(function() {
+            $('#user-search-data').val('').trigger('change');
+            table.ajax.reload();
+        });
+
+        // Redraw table when user date field changes
+        $('#submit-dates').click(function() {
+            table.ajax.reload();
+        });
+
+        // Redraw table when user date field is cleared
+        $('#clear-dates').click(function() {
+            document.getElementById('start-date').value = '';
+            document.getElementById('end-date').value = '';
+            document.getElementById('districtFilter').value = '';
+            table.ajax.reload();
+        });
+
+        // $(document).on("click", "#download-agreement", function () {
+        //     if ($('#start-date').val() == '' || $('#end-date').val() == '') {
+        //         alert("Please select start and end date");
+        //         return false;
+        //     } else {
+        //         $.ajax({
+        //             url: "/download-customer-agreement/",
+        //             type: "GET",                      // or GET, depending on your view
+        //             data: {
+        //                 start_date: $('#start-date').val(), // example extra data
+        //                 end_date: $('#end-date').val(),     // example extra data
+        //                 district: $('#districtFilter').val(),
+        //             },
+
+        //             success: function (response) {
+        //                 alert("Agreement downloaded successfully!");
+        //                 // Or handle response, maybe trigger file download
+        //             },
+        //             error: function (xhr) {
+        //                 alert("Error: " + xhr.responseText);
+        //             }
+        //         });
+        //     }
+        // });
+
+        $(document).on("click", "#download-agreement", function (event) {
+            const start = $('#start-date').val();
+            const end = $('#end-date').val();
+            const district = $('#districtFilter').val();
+
+            if (!start || !end) {
+                event.preventDefault();
+                alert("Please select start and end date");
+                return false;
+            }
+
+            // fill hidden fields before submit
+            $('#agreement_start_date').val(start);
+            $('#agreement_end_date').val(end);
+            $('#agreement_district').val(district);
+        });
+
+        // Toggle customer status
+        $('#customer_table').on('click', '.toggle-customer-status', function(event) {
+            // Confirm if user want to toggle customer status
+            var confirmDeactivation = confirm("Are you sure you want the change the status of this customer?");
+
+            // If not confirmed do nothing
+            if(!confirmDeactivation) {
+                event.preventDefault(); // Prevent the default action (page reload)
+            }
+        });
+
+        // Delete customer 
+        $('#customer_table').on('click', '.delete-customer', function(event) {
+            // Confirm if user want to delete customer 
+            var confirmDelete = confirm("Are you sure you want to delete this customer?");
+
+            // If not confirmed do nothing
+            if(!confirmDelete) {
+                event.preventDefault(); // Prevent the default action (page reload)
+            }
+        });
+
+        // Allow only specific input based on the selected filter
+        $('#noti_phone_number').off('input paste').on('input paste', function(e) {
+            var inputValue = $(this).val();
+            // Allow only numbers if option is phone number
+            let cleaned = inputValue.replace(/[^0-9+]/g, '');
+
+            // Format: keep +91 if present, max 10 digits
+            if (cleaned.startsWith('+91')) {
+                cleaned = '+91' + cleaned.substring(3).replace(/[^0-9]/g, '').substring(0, 10);
+            } else {
+                cleaned = cleaned.replace(/[^0-9]/g, '').substring(0, 10);
+            }
+
+            // Always set cleaned input
+            $(this).val(cleaned);
+
+            // Extract just the number part for validation
+            let numberPart = cleaned.startsWith('+91') ? cleaned.substring(3) : cleaned;
+
+            // Validate only when user has entered 10 digits
+            if (numberPart.length === 10) {
+                const startsWithValidDigit = /^[6-9]/.test(numberPart);
+                const isNotRepeatedDigits = !/^(\d)\1{9}$/.test(numberPart);
+
+                if (!(startsWithValidDigit && isNotRepeatedDigits)) {
+                    // Invalid — clear or show warning
+                    $(this).val('');
+                    alert('Enter a valid 10-digit mobile number starting with 6, 7, 8, or 9 and not all same digits.');
+                }
+            }
+        });
+        
+        // Close the add or edit modal when close buttton is clicked
+        $('.close').click(function() {
+            $('#notification_modal').modal('hide'); 
+        });
+
+        // Close alert automatically 
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1500);
+    });
+</script>
+
+			</div>
+		</div>
+		<div class="overlay toggle-icon"></div>
+		<a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+		<footer class="page-footer">
+			<p class="mb-0 text-white ">Copyright ©<span id="year">2026</span> . All right reserved and maintained by Aakri Impact Pvt Ltd.</p>
+		</footer>
+	</div>
+
+	<!-- <div>
+	
+			<div class="santa-container">
+				<img src="/static/images/gifs/xmas_santa.gif" alt="Santa" class="santa">
+			</div>
+		
+	</div> -->
+
+	<!-- Logout at 12.1 AM -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Set the current year in the footer
+			document.getElementById("year").textContent = new Date().getFullYear();
+		});
+		const logoutUrl = "/admin-logout/"; // Your logout URL
+
+		$('a[href*="admin-logout"], #logout-btn').on('click', function(e) {
+			// Clear the district and localbody from localStorage
+			localStorage.removeItem('district');
+			localStorage.removeItem('localbody');
+			// Let the link proceed normally to the logout URL
+		});
+		
+		function getMillisecondsUntilTargetTime() {
+			// Get current date and time in local timezone
+			const now = new Date();
+			
+			// Get current time in IST (UTC+5:30)
+			const nowIST = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Kolkata"}));
+			
+			// Set target time to 12:45 AM IST today
+			const targetTimeIST = new Date(nowIST);
+			targetTimeIST.setHours(0, 1, 0, 0);
+			
+			if (nowIST > targetTimeIST) {
+				targetTimeIST.setDate(targetTimeIST.getDate() + 1);
+			}
+			
+			// Calculate difference in milliseconds
+			const timeLeft = targetTimeIST - nowIST;
+			
+			return timeLeft;
+		}
+
+		// const msUntilTargetTime = getMillisecondsUntilTargetTime();
+		// if (msUntilTargetTime > 0) {
+		// 	setTimeout(() => {
+		// 		window.location.href = logoutUrl;
+		// 	}, msUntilTargetTime);
+		// }
+	</script>
+		
+	<!-- 
+		<script>
+			// Create a canvas element
+			const canvas = document.createElement('canvas');
+			canvas.id = 'snowCanvas';
+			canvas.style.position = 'fixed';
+			canvas.style.top = 0;
+			canvas.style.left = 0;
+			canvas.style.width = '100%';
+			canvas.style.height = '100%';
+			canvas.style.pointerEvents = 'none';
+			canvas.style.zIndex = 9999;
+			document.body.appendChild(canvas);
+
+			const ctx = canvas.getContext('2d');
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+
+			const numFlakes = 100;
+			const flakes = [];
+
+			for (let i = 0; i < numFlakes; i++) {
+				flakes.push({
+					x: Math.random() * canvas.width,
+					y: Math.random() * canvas.height,
+					r: Math.random() * 4 + 1,
+					d: Math.random() * numFlakes
+				});
+			}
+
+			function drawSnow() {
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				ctx.fillStyle = 'white';
+				ctx.beginPath();
+				for (let i = 0; i < numFlakes; i++) {
+					let f = flakes[i];
+					ctx.moveTo(f.x, f.y);
+					ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+				}
+				ctx.fill();
+				updateSnow();
+			}
+
+			let angle = 0;
+
+			function updateSnow() {
+				angle += 0.01;
+				for (let i = 0; i < numFlakes; i++) {
+					let f = flakes[i];
+					f.y += Math.cos(angle + f.d) + 1 + f.r / 2;
+					f.x += Math.sin(angle) * 2;
+
+					if (f.x > canvas.width + 5 || f.x < -5 || f.y > canvas.height) {
+						f.x = Math.random() * canvas.width;
+						f.y = -10;
+					}
+				}
+			}
+
+			setInterval(drawSnow, 33);
+
+			window.addEventListener('resize', () => {
+				canvas.width = window.innerWidth;
+				canvas.height = window.innerHeight;
+			});
+		</script>
+	 -->
+	
+	<!-- Bootstrap -->
+	<script src="/static/js/bootstrap.bundle.min.js"></script>
+	<script src="/static/js/app.js"></script>
+
+</body></html>

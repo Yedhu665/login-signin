@@ -1,0 +1,891 @@
+[
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Dashboard"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Analytics"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Operations"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Customer"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "active",
+    "placeholder": "",
+    "text": "Customers"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Customer Survey"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Drive Survey"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "QR Customer"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "QR Customers"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Service Zones"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Customer Orders"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Orders Map"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Cancel Request"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Scrap Money"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Withdraw Request"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "BWG Withdraw Request"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "All Withdrawals"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Bulk Waste Generator"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Client Requests"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "BWG Clients"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "BWG Bag"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "BWG Orders"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "BWG Scrap Order"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "BWG DH Waste Order"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Scrap Stocks"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Stock/ Inventory"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Vendors"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Stock Categories"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Add Stock"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Sale History"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Service Locations"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Country"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "State"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "District"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap - Region"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste - Localbody"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Ward"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Scrap Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Products"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Category"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "DH Waste Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste Products"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste Category"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste Bags"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Provider Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Cash Collections"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Roles"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Pickup Vehicles"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Providers"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Payslip"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Team"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Track"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Employees"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Reports"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Aakri All Record"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Aakri All Record Monthly"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Collections"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Settlement"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Move to Wallet Reports"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Wallet Bill Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Scrap Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Individual Scrap Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste/BWG Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider DH Waste Weight Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste GST Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Wallet Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Cash Log Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Cash Flow Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Bag Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Vehicle Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Consolidated Provider Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Provider Track Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "QR Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "DH Waste PDF Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Order Age Report"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Whatsapp Chatbot"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Feedback"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Call Request"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Web Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Waste Dispatch"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "App Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Dynamic Controls"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Service Category"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Order Cancel Reasons"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Order Drop Reasons"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "FAQs"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Version Code"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Green Point Offers"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Razorpay"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Updations"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Location Accuracy"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Offers and Coupons"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Contact Number Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Green Marketplace"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "has-arrow d-flex justify-content-between align-items-center",
+    "placeholder": "",
+    "text": "Admin Settings"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Admin Roles"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "Admin Users"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "LSGD Users"
+  },
+  {
+    "tag": "A",
+    "id": "dropdownMenuLink",
+    "class": "nav-link",
+    "placeholder": "",
+    "text": "Yedhu Testerr"
+  },
+  {
+    "tag": "A",
+    "id": "logout-btn",
+    "class": "dropdown-item",
+    "placeholder": "",
+    "text": "Logout"
+  },
+  {
+    "tag": "SELECT",
+    "id": "districtFilter",
+    "class": "form-select",
+    "placeholder": "",
+    "text": "All\nAlappuzha\nErnakulam\nKannur\nKasaragod\nKollam\nKottayam\nKozhikode\nMalappuram\nPalakkad\nPathanamthitta\nThiruvananthapuram\nThrissur"
+  },
+  {
+    "tag": "INPUT",
+    "id": "start-date",
+    "class": "form-control",
+    "placeholder": "Select date range",
+    "text": ""
+  },
+  {
+    "tag": "INPUT",
+    "id": "end-date",
+    "class": "form-control",
+    "placeholder": "Select date range",
+    "text": ""
+  },
+  {
+    "tag": "BUTTON",
+    "id": "submit-dates",
+    "class": "btn btn-primary",
+    "placeholder": "",
+    "text": "Filter"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "clear-dates",
+    "class": "btn btn-primary",
+    "placeholder": "",
+    "text": "Clear"
+  },
+  {
+    "tag": "SELECT",
+    "id": "search_by",
+    "class": "form-select",
+    "placeholder": "",
+    "text": "Phone\nName\nOrder Code"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "user-search",
+    "class": "btn btn-secondary mt-4",
+    "placeholder": "",
+    "text": "Search"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "clear-search",
+    "class": "btn btn-secondary mt-4 px-3",
+    "placeholder": "",
+    "text": "Clear"
+  },
+  {
+    "tag": "INPUT",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "eC8oIYGFZXM3p9MubvCZqAU8aRS2I7kiIOtTPtvzvfi3Bji1H209etJreUyOKljt"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "download-agreement",
+    "class": "btn btn-danger float-end mt-4",
+    "placeholder": "",
+    "text": "Download Agreement"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "class": "dt-button buttons-csv buttons-html5 btn btn-success",
+    "placeholder": "",
+    "text": "To Excel"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "class": "dt-button btn btn-primary",
+    "placeholder": "",
+    "text": "Notification"
+  },
+  {
+    "tag": "SELECT",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "10\n25\n50\n100\nAll"
+  },
+  {
+    "tag": "A",
+    "id": "customer_table_previous",
+    "class": "paginate_button previous disabled",
+    "placeholder": "",
+    "text": "Previous"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button current",
+    "placeholder": "",
+    "text": "1"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button ",
+    "placeholder": "",
+    "text": "2"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button ",
+    "placeholder": "",
+    "text": "3"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button ",
+    "placeholder": "",
+    "text": "4"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button ",
+    "placeholder": "",
+    "text": "5"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "class": "paginate_button ",
+    "placeholder": "",
+    "text": "12,229"
+  },
+  {
+    "tag": "A",
+    "id": "customer_table_next",
+    "class": "paginate_button next",
+    "placeholder": "",
+    "text": "Next"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "class": "btn close",
+    "placeholder": "",
+    "text": "×"
+  },
+  {
+    "tag": "INPUT",
+    "id": "",
+    "class": "",
+    "placeholder": "",
+    "text": "eC8oIYGFZXM3p9MubvCZqAU8aRS2I7kiIOtTPtvzvfi3Bji1H209etJreUyOKljt"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "submit-btn",
+    "class": "btn btn-success",
+    "placeholder": "",
+    "text": "Submit"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "class": "btn btn-danger",
+    "placeholder": "",
+    "text": "Cancel"
+  }
+]

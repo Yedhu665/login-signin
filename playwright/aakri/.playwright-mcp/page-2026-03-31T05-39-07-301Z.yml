@@ -1,0 +1,301 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "logo icon" [ref=e5]
+      - img [ref=e7]
+      - generic [ref=e9] [cursor=pointer]: 
+    - list [ref=e11]:
+      - listitem [ref=e12]:
+        - link " Dashboard " [ref=e13] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e14]:
+            - generic [ref=e16]: 
+            - generic [ref=e17]: Dashboard
+          - generic [ref=e18]: 
+        - text:  
+      - listitem [ref=e19]:
+        - link " Customer " [ref=e20] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e21]:
+            - generic [ref=e23]: 
+            - generic [ref=e24]: Customer
+          - generic [ref=e25]: 
+        - text:   
+      - listitem [ref=e26]:
+        - link " QR Customer " [ref=e27] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e28]:
+            - generic [ref=e30]: 
+            - generic [ref=e31]: QR Customer
+          - generic [ref=e32]: 
+        - text:  
+      - listitem [ref=e33]:
+        - link " Customer Orders " [ref=e34] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e35]:
+            - generic [ref=e37]: 
+            - generic [ref=e38]: Customer Orders
+          - generic [ref=e39]: 
+        - text:    
+      - listitem [ref=e40]:
+        - link " Scrap Money " [ref=e41] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e42]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Scrap Money
+          - generic [ref=e46]: 
+        - text:   
+      - listitem [ref=e47]:
+        - link " Bulk Waste Generator " [ref=e48] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e49]:
+            - generic [ref=e51]: 
+            - generic [ref=e52]: Bulk Waste Generator
+          - generic [ref=e53]: 
+        - text:   
+      - listitem [ref=e54]:
+        - link " BWG Orders " [ref=e55] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e56]:
+            - generic [ref=e58]: 
+            - generic [ref=e59]: BWG Orders
+          - generic [ref=e60]: 
+        - text:  
+      - listitem [ref=e61]:
+        - link " Scrap Stocks " [ref=e62] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e63]:
+            - generic [ref=e65]: 
+            - generic [ref=e66]: Scrap Stocks
+          - generic [ref=e67]: 
+        - text:     
+      - listitem [ref=e68]:
+        - link " Service Locations " [ref=e69] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e70]:
+            - generic [ref=e72]: 
+            - generic [ref=e73]: Service Locations
+          - generic [ref=e74]: 
+        - text:      
+      - listitem [ref=e75]:
+        - link " Scrap Settings " [ref=e76] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e77]:
+            - generic [ref=e79]: 
+            - generic [ref=e80]: Scrap Settings
+          - generic [ref=e81]: 
+        - text:  
+      - listitem [ref=e82]:
+        - link " DH Waste Settings " [ref=e83] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e84]:
+            - generic [ref=e86]: 
+            - generic [ref=e87]: DH Waste Settings
+          - generic [ref=e88]: 
+        - text:   
+      - listitem [ref=e89]:
+        - link "  Provider Settings " [ref=e90] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e91]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: 
+              - generic [ref=e95]: 
+            - generic [ref=e96]: Provider Settings
+          - generic [ref=e97]: 
+        - text:       
+      - listitem [ref=e98]:
+        - link " Employees" [ref=e99] [cursor=pointer]:
+          - /url: /employee/
+          - generic [ref=e101]: 
+          - generic [ref=e102]: Employees
+      - listitem [ref=e103]:
+        - link " Reports " [ref=e104] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e105]:
+            - generic [ref=e107]: 
+            - generic [ref=e108]: Reports
+          - generic [ref=e109]: 
+        - text:                     
+      - listitem [ref=e110]:
+        - link " Whatsapp Chatbot " [ref=e111] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e112]:
+            - generic [ref=e114]: 
+            - generic [ref=e115]: Whatsapp Chatbot
+          - generic [ref=e116]: 
+        - text:  
+      - listitem [ref=e117]:
+        - link " Web Settings " [ref=e118] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e119]:
+            - generic [ref=e121]: 
+            - generic [ref=e122]: Web Settings
+          - generic [ref=e123]: 
+        - text: 
+      - listitem [ref=e124]:
+        - link " App Settings " [ref=e125] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e126]:
+            - generic [ref=e128]: 
+            - generic [ref=e129]: App Settings
+          - generic [ref=e130]: 
+        - text:     ?        
+      - listitem [ref=e131]:
+        - link " Admin Settings " [ref=e132] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e133]:
+            - generic [ref=e135]: 
+            - generic [ref=e136]: Admin Settings
+          - generic [ref=e137]: 
+        - text:   
+  - banner:
+    - navigation [ref=e139]:
+      - text: 
+      - generic [ref=e140]:
+        - link "Yedhu Testerr" [ref=e141] [cursor=pointer]:
+          - /url: "#"
+          - paragraph [ref=e143]: Yedhu Testerr
+        - text: 
+  - generic [ref=e146]:
+    - heading "Scrap Orders" [level=1] [ref=e148]
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]: Order Status
+        - combobox [ref=e154]:
+          - option "All" [selected]
+          - option "Open"
+          - option "Confirmed"
+          - option "Start Travelling"
+          - option "Reached Location"
+          - option "Completed"
+          - option "Cancelled"
+          - option "Pending"
+      - generic [ref=e155]:
+        - generic [ref=e156]: District
+        - combobox [ref=e157]:
+          - option "Alappuzha"
+          - option "Ernakulam"
+          - option "Kannur"
+          - option "Kasaragod"
+          - option "Kollam"
+          - option "Kottayam"
+          - option "Kozhikode"
+          - option "Malappuram"
+          - option "Palakkad"
+          - option "Pathanamthitta"
+          - option "Thiruvananthapuram"
+          - option "Thrissur"
+      - generic [ref=e158]:
+        - generic [ref=e159]: Scrap Region
+        - combobox [ref=e160]
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]: Date Type
+        - combobox [ref=e166]:
+          - option "Schedule Date" [selected]
+          - option "Order Date"
+      - generic [ref=e168]:
+        - generic [ref=e169]: Start Date
+        - textbox [ref=e170]: 2026-03-01
+      - generic [ref=e172]:
+        - generic [ref=e173]: End Date
+        - textbox [ref=e174]
+      - generic [ref=e175]:
+        - button "Filter" [ref=e176] [cursor=pointer]
+        - button "Clear" [ref=e177] [cursor=pointer]
+    - generic [ref=e178]:
+      - generic [ref=e180]:
+        - generic [ref=e181]: Search By
+        - combobox [ref=e182]:
+          - option "Phone" [selected]
+          - option "Name"
+          - option "Order Code"
+      - textbox [ref=e185]
+      - generic [ref=e187]:
+        - button "Search" [ref=e188] [cursor=pointer]
+        - button "Clear" [ref=e189] [cursor=pointer]
+    - generic [ref=e190]:
+      - generic [ref=e192]:
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - paragraph [ref=e195]: Order Status
+            - heading "Total Orders -" [level=3] [ref=e196]: Total Orders -
+          - generic [ref=e198]: 
+        - generic [ref=e200]:
+          - paragraph [ref=e201]: Todays Status
+          - list [ref=e202]:
+            - listitem [ref=e203]: Total Pending
+            - listitem [ref=e205]: Actual Scheduled
+            - listitem [ref=e207]: Cancelled
+            - listitem [ref=e209]: Completed
+            - listitem [ref=e211]: Carry Forward Pending
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - paragraph [ref=e217]: Previous Day Status
+          - generic [ref=e219]: 
+        - list [ref=e222]:
+          - listitem [ref=e223]: Scheduled
+          - listitem [ref=e225]: Cancelled
+          - listitem [ref=e227]: Completed
+          - listitem [ref=e229]: Pending
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - generic [ref=e237]:
+            - button "To Excel" [ref=e238] [cursor=pointer]
+            - button "Add Order" [ref=e239] [cursor=pointer]
+          - generic [ref=e242]:
+            - text: Show
+            - combobox "Show entries" [ref=e243]:
+              - option "10" [selected]
+              - option "25"
+              - option "50"
+              - option "All"
+            - text: entries
+        - generic [ref=e246]:
+          - text: "Search:"
+          - searchbox "Search:" [ref=e247]
+      - table [ref=e250]:
+        - rowgroup [ref=e251]:
+          - row "Sl No. Order Code Platform Customer District Scrap Region Provider Vehicle Order Date Schedule Date Bill Type Service Charge Roundoff Positive Amount Negative Amount Total Bill Order Status Action" [ref=e252]:
+            - columnheader [ref=e253]:
+              - checkbox [ref=e254]
+            - columnheader "Sl No." [ref=e255]
+            - columnheader "Order Code" [ref=e256] [cursor=pointer]
+            - columnheader "Platform" [ref=e257] [cursor=pointer]
+            - columnheader "Customer" [ref=e258] [cursor=pointer]
+            - columnheader "District" [ref=e259] [cursor=pointer]
+            - columnheader "Scrap Region" [ref=e260] [cursor=pointer]
+            - columnheader "Provider" [ref=e261] [cursor=pointer]
+            - columnheader "Vehicle" [ref=e262] [cursor=pointer]
+            - columnheader "Order Date" [ref=e263] [cursor=pointer]
+            - columnheader "Schedule Date" [ref=e264] [cursor=pointer]
+            - columnheader "Bill Type" [ref=e265] [cursor=pointer]
+            - columnheader "Service Charge" [ref=e266] [cursor=pointer]
+            - columnheader "Roundoff" [ref=e267] [cursor=pointer]
+            - columnheader "Positive Amount" [ref=e268] [cursor=pointer]
+            - columnheader "Negative Amount" [ref=e269] [cursor=pointer]
+            - columnheader "Total Bill" [ref=e270] [cursor=pointer]
+            - columnheader "Order Status" [ref=e271] [cursor=pointer]
+            - columnheader "Action" [ref=e272]
+        - rowgroup
+      - generic [ref=e274]:
+        - status
+    - generic [ref=e276]:
+      - generic [ref=e278]:
+        - generic [ref=e279]: Order status
+        - combobox [ref=e280]:
+          - option "Open"
+          - option "Confirmed"
+          - option "Start Travelling"
+          - option "Reached Location"
+          - option "Completed"
+          - option "Cancelled"
+          - option "Pending"
+      - generic [ref=e282]:
+        - generic [ref=e283]: Schedule date
+        - textbox "Schedule date" [ref=e284]
+      - button "Update" [ref=e288] [cursor=pointer]
+  - text: 
+  - contentinfo [ref=e289]:
+    - paragraph [ref=e290]: Copyright ©2026 . All right reserved and maintained by Aakri Impact Pvt Ltd.

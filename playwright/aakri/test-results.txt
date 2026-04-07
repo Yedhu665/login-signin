@@ -1,0 +1,64 @@
+﻿[dotenv@17.3.1] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  enable debug logging with { debug: true }
+[dotenv@17.3.1] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  suppress all logs with { quiet: true }
+
+Running 3 tests using 2 workers
+
+[dotenv@17.3.1] injecting env (3) from .env -- tip: ≡ƒöÉ prevent building .env in docker: https://dotenvx.com/prebuild
+Authentication successful and state saved to: C:\Users\yedhu\playwright-project\playwright\aakri\storageState.json
+  Γ£ô  1 [setup] ΓÇ║ auth.setup.js:10:1 ΓÇ║ authenticate (4.7s)
+[dotenv@17.3.1] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  override existing env vars with { override: true }
+[dotenv@17.3.1] injecting env (3) from .env -- tip: ΓÜÖ∩╕Å  suppress all logs with { quiet: true }
+  Γ£ÿ  3 [chromium] ΓÇ║ scrap.spec.js:28:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Verify existing phone auto-populates customer name (30.1s)
+  Γ£ÿ  2 [chromium] ΓÇ║ scrap.spec.js:43:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Create a new scrap order successfully (30.1s)
+
+
+  1) [chromium] ΓÇ║ scrap.spec.js:28:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Verify existing phone auto-populates customer name 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('link', { name: /^Scrap$/i })[22m
+
+
+       at pages\ScrapPage.js:29
+
+      27 |         // Assuming we navigate from sidebar as seen in research
+      28 |         await this.page.getByRole('link', { name: /Customer Orders/i }).click();
+    > 29 |         await this.page.getByRole('link', { name: /^Scrap$/i }).click();
+         |                                                                 ^
+      30 |         await this.page.getByRole('button', { name: /Add Order/i }).click();
+      31 |     }
+      32 |
+        at ScrapPage.navigate (C:\Users\yedhu\playwright-project\playwright\aakri\pages\ScrapPage.js:29:65)
+        at C:\Users\yedhu\playwright-project\playwright\aakri\scrap.spec.js:38:9
+
+    Error Context: test-output\scrap-Scrap-Order-Creation-61eb2-uto-populates-customer-name-chromium\error-context.md
+
+  2) [chromium] ΓÇ║ scrap.spec.js:43:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Create a new scrap order successfully 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('link', { name: /^Scrap$/i })[22m
+
+
+       at pages\ScrapPage.js:29
+
+      27 |         // Assuming we navigate from sidebar as seen in research
+      28 |         await this.page.getByRole('link', { name: /Customer Orders/i }).click();
+    > 29 |         await this.page.getByRole('link', { name: /^Scrap$/i }).click();
+         |                                                                 ^
+      30 |         await this.page.getByRole('button', { name: /Add Order/i }).click();
+      31 |     }
+      32 |
+        at ScrapPage.navigate (C:\Users\yedhu\playwright-project\playwright\aakri\pages\ScrapPage.js:29:65)
+        at C:\Users\yedhu\playwright-project\playwright\aakri\scrap.spec.js:51:9
+
+    Error Context: test-output\scrap-Scrap-Order-Creation-88b68-ew-scrap-order-successfully-chromium\error-context.md
+
+  2 failed
+    [chromium] ΓÇ║ scrap.spec.js:28:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Verify existing phone auto-populates customer name 
+    [chromium] ΓÇ║ scrap.spec.js:43:5 ΓÇ║ Scrap Order Creation Flow ΓÇ║ Create a new scrap order successfully 
+  1 passed (38.6s)

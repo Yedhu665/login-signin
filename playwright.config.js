@@ -1,7 +1,8 @@
 const { defineConfig, devices } = require('@playwright/test');
+const path = require('path');
 
 module.exports = defineConfig({
-    testDir: './tests',
+    testDir: '.',
     fullyParallel: true,
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 2 : 0,
@@ -9,12 +10,19 @@ module.exports = defineConfig({
     reporter: 'html',
     use: {
         trace: 'on-first-retry',
-        screenshot: 'only-on-failure',
     },
     projects: [
         {
+            name: 'setup',
+            testMatch: /.*\.setup\.js/,
+        },
+        {
             name: 'chromium',
-            use: { ...devices['Desktop Chrome'] },
+            use: {
+                ...devices['Desktop Chrome'],
+                storageState: path.resolve(__dirname, 'playwright/tharwah/tharwahui/.auth/user.json'),
+            },
+            dependencies: ['setup'],
         },
     ],
 });
